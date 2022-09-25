@@ -1,0 +1,151 @@
+  [1m[35m (301.3ms)[0m  [1m[35mCREATE DATABASE "matgram_development" ENCODING = 'unicode'[0m
+  [1m[35m (175.8ms)[0m  [1m[35mCREATE DATABASE "matgram_test" ENCODING = 'unicode'[0m
+  [1m[35m (6.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (5.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2699561720942175810)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreatePosts (20220925220245)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (6.6ms)[0m  [1m[35mCREATE TABLE "posts" ("id" bigserial primary key, "description" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220925220245"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2022-09-25 22:07:22.967654"], ["updated_at", "2022-09-25 22:07:22.967654"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(2699561720942175810)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2022-09-25 19:44:59 -0300
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:14
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1367)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/mattstudy/matgram/public/packs
+[Webpacker] Hash: 193846b851dbca856641
+Version: webpack 4.46.0
+Time: 529ms
+Built at: 09/25/2022 7:45:00 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-4cc405faa0b981ed926f.js   68.9 KiB  application  [emitted] [immutable]  application
+js/application-4cc405faa0b981ed926f.js.map   78.2 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-4cc405faa0b981ed926f.js js/application-4cc405faa0b981ed926f.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 435 bytes {application} [built]
+    + 2 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 1255.3ms | Allocations: 14227)
+Completed 200 OK in 1260ms (Views: 1256.6ms | ActiveRecord: 0.6ms | Allocations: 18008)
+
+
+Started GET "/" for ::1 at 2022-09-25 19:45:00 -0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:14
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 967)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.2ms | Allocations: 7064)
+Completed 200 OK in 15ms (Views: 13.9ms | ActiveRecord: 0.6ms | Allocations: 7349)
+
+
+Started GET "/" for ::1 at 2022-09-25 19:59:54 -0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:14
+  Rendered posts/index.html.erb within layouts/application (Duration: 34.1ms | Allocations: 5215)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/mattstudy/matgram/public/packs
+[Webpacker] Hash: 193846b851dbca856641
+Version: webpack 4.46.0
+Time: 266ms
+Built at: 09/25/2022 7:59:55 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-4cc405faa0b981ed926f.js   68.9 KiB  application  [emitted] [immutable]  application
+js/application-4cc405faa0b981ed926f.js.map   78.2 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-4cc405faa0b981ed926f.js js/application-4cc405faa0b981ed926f.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 435 bytes {application} [built]
+    + 2 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 911.8ms | Allocations: 18603)
+Completed 200 OK in 915ms (Views: 913.9ms | ActiveRecord: 16.5ms | Allocations: 19586)
+
+
+Started GET "/" for ::1 at 2022-09-25 20:02:02 -0300
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:14
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1318)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/mattstudy/matgram/public/packs
+[Webpacker] Hash: 193846b851dbca856641
+Version: webpack 4.46.0
+Time: 266ms
+Built at: 09/25/2022 8:02:03 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-4cc405faa0b981ed926f.js   68.9 KiB  application  [emitted] [immutable]  application
+js/application-4cc405faa0b981ed926f.js.map   78.2 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-4cc405faa0b981ed926f.js js/application-4cc405faa0b981ed926f.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 435 bytes {application} [built]
+    + 2 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 877.5ms | Allocations: 18091)
+Completed 200 OK in 880ms (Views: 877.9ms | ActiveRecord: 0.6ms | Allocations: 20808)
+
+
+Started GET "/" for ::1 at 2022-09-25 20:03:21 -0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:14
+  Rendered posts/index.html.erb within layouts/application (Duration: 6.0ms | Allocations: 1014)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: a5679b12ce6f802cf387
+Version: webpack 4.46.0
+Time: 555ms
+Built at: 09/25/2022 8:03:22 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-fddea40df0428f30595d.js   78.3 KiB  application  [emitted] [immutable]  application
+js/application-fddea40df0428f30595d.js.map   87.4 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-fddea40df0428f30595d.js js/application-fddea40df0428f30595d.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 468 bytes {application} [built]
+[./app/javascript/src/application.css] 607 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./app/javascript/src/application.css] ./node_modules/css-loader/dist/cjs.js??ref--5-1!./node_modules/postcss-loader/src??ref--5-2!./app/javascript/src/application.css 289 bytes {application} [built] [failed] [1 error]
+    + 3 hidden modules
+
+ERROR in ./app/javascript/src/application.css (./node_modules/css-loader/dist/cjs.js??ref--5-1!./node_modules/postcss-loader/src??ref--5-2!./app/javascript/src/application.css)
+Module build failed (from ./node_modules/postcss-loader/src/index.js):
+Error: Failed to find 'toastify-js/src/toastify.css'
+  in [
+    /home/mattstudy/matgram/app/javascript/src
+  ]
+    at /home/mattstudy/matgram/node_modules/postcss-import/lib/resolve-id.js:35:13
+ @ ./app/javascript/src/application.css 2:26-171
+ @ ./app/javascript/packs/application.js
+
+  Rendered layout layouts/application.html.erb (Duration: 1181.6ms | Allocations: 4760)
+Completed 200 OK in 1183ms (Views: 1180.4ms | ActiveRecord: 1.8ms | Allocations: 5044)
+
+

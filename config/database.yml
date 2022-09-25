@@ -1,0 +1,22 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  username: matias
+  password: manager
+  host: localhost
+  port: 5433
+  pool: 5
+
+development:
+  <<: *default
+  database: matgram_development
+
+test:
+  <<: *default
+  database: matgram_test
+
+production:
+  <<: *default
+  database: matgram_production
+  username: matgram
+  password: <%= ENV["MATGRAM_DATABASE_PASSWORD"] %>
