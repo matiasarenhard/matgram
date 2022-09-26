@@ -363,3 +363,71 @@ Processing by PostsController#index as HTML
 Completed 200 OK in 7ms (Views: 5.8ms | ActiveRecord: 0.5ms | Allocations: 3864)
 
 
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2699561720942175810)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to DeviseCreateUsers (20220926013334)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (9.4ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "name" character varying DEFAULT '' NOT NULL, "username" character varying DEFAULT '' NOT NULL, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (2.0ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_username" ON "users" ("username")[0m
+  [1m[35m (1.6ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (1.6ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220926013334"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(2699561720942175810)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2022-09-25 22:45:11 -0300
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+Completed 401 Unauthorized in 4ms (ActiveRecord: 0.0ms | Allocations: 2096)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-09-25 22:45:11 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/authentication.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/authentication
+  Rendered devise/shared/_links.html.erb (Duration: 0.5ms | Allocations: 625)
+  Rendered devise/sessions/new.html.erb within layouts/authentication (Duration: 4.0ms | Allocations: 3677)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: c874a58a4f37efd78df1
+Version: webpack 4.46.0
+Time: 572ms
+Built at: 09/25/2022 10:45:12 PM
+                                        Asset      Size          Chunks                         Chunk Names
+       js/application-19b21b7e667e0370f711.js  95.8 KiB     application  [emitted] [immutable]  application
+   js/application-19b21b7e667e0370f711.js.map   105 KiB     application  [emitted] [dev]        application
+    js/authentication-49d31312f0ec28351937.js  39.5 KiB  authentication  [emitted] [immutable]  authentication
+js/authentication-49d31312f0ec28351937.js.map  39.8 KiB  authentication  [emitted] [dev]        authentication
+     js/flashMessages-754b9186e7eb9ef59007.js  20.9 KiB   flashMessages  [emitted] [immutable]  flashMessages
+ js/flashMessages-754b9186e7eb9ef59007.js.map    21 KiB   flashMessages  [emitted] [dev]        flashMessages
+                                manifest.json  1.05 KiB                  [emitted]              
+Entrypoint application = js/application-19b21b7e667e0370f711.js js/application-19b21b7e667e0370f711.js.map
+Entrypoint authentication = js/authentication-49d31312f0ec28351937.js js/authentication-49d31312f0ec28351937.js.map
+Entrypoint flashMessages = js/flashMessages-754b9186e7eb9ef59007.js js/flashMessages-754b9186e7eb9ef59007.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 494 bytes {application} [built]
+[./app/javascript/packs/authentication.js] 61 bytes {authentication} [built]
+[./app/javascript/packs/flashMessages.js] 2.08 KiB {flashMessages} {application} {authentication} [built]
+[./app/javascript/src/application.css] 607 bytes {application} [built]
+[./app/javascript/src/authentication.css] 610 bytes {authentication} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./app/javascript/src/application.css] ./node_modules/css-loader/dist/cjs.js??ref--5-1!./node_modules/postcss-loader/src??ref--5-2!./app/javascript/src/application.css 311 bytes {application} [built] [failed] [1 error]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./app/javascript/src/authentication.css] ./node_modules/css-loader/dist/cjs.js??ref--5-1!./node_modules/postcss-loader/src??ref--5-2!./app/javascript/src/authentication.css 6 KiB {authentication} [built]
+    + 5 hidden modules
+
+ERROR in ./app/javascript/src/application.css (./node_modules/css-loader/dist/cjs.js??ref--5-1!./node_modules/postcss-loader/src??ref--5-2!./app/javascript/src/application.css)
+Module build failed (from ./node_modules/postcss-loader/src/index.js):
+Error: Failed to find 'trix/dist/trix'
+  in [
+    /home/mattstudy/matgram/app/javascript/src
+  ]
+    at /home/mattstudy/matgram/node_modules/postcss-import/lib/resolve-id.js:35:13
+    at async Promise.all (index 0)
+ @ ./app/javascript/src/application.css 2:26-171
+ @ ./app/javascript/packs/application.js
+
+  Rendered layout layouts/authentication.html.erb (Duration: 1184.3ms | Allocations: 11013)
+Completed 200 OK in 1194ms (Views: 1185.7ms | ActiveRecord: 2.3ms | Allocations: 18819)
+
+
