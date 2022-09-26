@@ -149,3 +149,217 @@ Error: Failed to find 'toastify-js/src/toastify.css'
 Completed 200 OK in 1183ms (Views: 1180.4ms | ActiveRecord: 1.8ms | Allocations: 5044)
 
 
+Started GET "/" for ::1 at 2022-09-25 22:07:47 -0300
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:3
+  Rendered posts/index.html.erb within layouts/application (Duration: 9.8ms | Allocations: 6488)
+  Rendered layout layouts/application.html.erb (Duration: 9.9ms | Allocations: 6557)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 1.9ms | Allocations: 9243)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `current_user' for #<ActionView::Base:0x000000000076e8>
+Did you mean?  current_page?):
+     8:   </section>
+     9: 
+    10:   <aside>
+    11:     <%= render current_user %>
+    12: 
+    13:     <section class="suggestions">
+    14:       <h4>Sugestões Para Você</h4>
+  
+app/views/posts/index.html.erb:11
+Started GET "/" for ::1 at 2022-09-25 22:08:12 -0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:3
+  Rendered posts/index.html.erb within layouts/application (Duration: 7.6ms | Allocations: 5198)
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 5263)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.5ms | Allocations: 6324)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `current_user' for #<ActionView::Base:0x00000000007b98>
+Did you mean?  current_page?):
+     8:   </section>
+     9: 
+    10:   <aside>
+    11:     <%= render current_user %>
+    12: 
+    13:     <section class="suggestions">
+    14:       <h4>Sugestões Para Você</h4>
+  
+app/views/posts/index.html.erb:11
+Started GET "/" for ::1 at 2022-09-25 22:08:14 -0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:3
+  Rendered posts/index.html.erb within layouts/application (Duration: 15.0ms | Allocations: 4929)
+  Rendered layout layouts/application.html.erb (Duration: 15.2ms | Allocations: 4994)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.6ms | Allocations: 5251)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `current_user' for #<ActionView::Base:0x00000000007fd0>
+Did you mean?  current_page?):
+     8:   </section>
+     9: 
+    10:   <aside>
+    11:     <%= render current_user %>
+    12: 
+    13:     <section class="suggestions">
+    14:       <h4>Sugestões Para Você</h4>
+  
+app/views/posts/index.html.erb:11
+Started GET "/" for ::1 at 2022-09-25 22:08:19 -0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:3
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1074)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 7366)
+Completed 200 OK in 10ms (Views: 8.0ms | ActiveRecord: 0.9ms | Allocations: 8371)
+
+
+Started GET "/" for ::1 at 2022-09-25 22:12:38 -0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:3
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1572)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.9ms | Allocations: 5680)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 1.6ms | Allocations: 6962)
+
+
+  
+ActionView::Template::Error (Missing partial layouts/_user_actions_modal with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/home/mattstudy/matgram/app/views"
+  * "/home/mattstudy/.rvm/gems/ruby-2.7.5/gems/actiontext-6.1.7/app/views"
+  * "/home/mattstudy/.rvm/gems/ruby-2.7.5/gems/actionmailbox-6.1.7/app/views"
+):
+    34:     </header>
+    35: 
+    36:     <%= yield %>
+    37:     <%= render "layouts/user_actions_modal" %>
+    38:   </body>
+    39: </html>
+  
+app/views/layouts/application.html.erb:37
+Started GET "/" for ::1 at 2022-09-25 22:12:48 -0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Exists? (1.5ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:3
+  Rendered posts/index.html.erb within layouts/application (Duration: 5.7ms | Allocations: 1064)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.6ms | Allocations: 4056)
+Completed 200 OK in 15ms (Views: 12.1ms | ActiveRecord: 1.5ms | Allocations: 5039)
+
+
+Started GET "/" for ::1 at 2022-09-25 22:16:47 -0300
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:3
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1851)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 8216)
+Completed 200 OK in 12ms (Views: 8.0ms | ActiveRecord: 2.0ms | Allocations: 10934)
+
+
+Started GET "/" for ::1 at 2022-09-25 22:16:50 -0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:3
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 885)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 3.9ms | Allocations: 3548)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.5ms | Allocations: 3832)
+
+
+Started GET "/" for ::1 at 2022-09-25 22:25:03 -0300
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:3
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1851)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: 1581505fffd2c83c68bb
+Version: webpack 4.46.0
+Time: 624ms
+Built at: 09/25/2022 10:25:04 PM
+                                       Asset       Size         Chunks                         Chunk Names
+      js/application-19b21b7e667e0370f711.js   95.8 KiB    application  [emitted] [immutable]  application
+  js/application-19b21b7e667e0370f711.js.map    105 KiB    application  [emitted] [dev]        application
+    js/flashMessages-754b9186e7eb9ef59007.js   20.9 KiB  flashMessages  [emitted] [immutable]  flashMessages
+js/flashMessages-754b9186e7eb9ef59007.js.map     21 KiB  flashMessages  [emitted] [dev]        flashMessages
+                               manifest.json  717 bytes                 [emitted]              
+Entrypoint application = js/application-19b21b7e667e0370f711.js js/application-19b21b7e667e0370f711.js.map
+Entrypoint flashMessages = js/flashMessages-754b9186e7eb9ef59007.js js/flashMessages-754b9186e7eb9ef59007.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 494 bytes {application} [built]
+[./app/javascript/packs/flashMessages.js] 2.08 KiB {flashMessages} {application} [built]
+[./app/javascript/src/application.css] 607 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./app/javascript/src/application.css] ./node_modules/css-loader/dist/cjs.js??ref--5-1!./node_modules/postcss-loader/src??ref--5-2!./app/javascript/src/application.css 311 bytes {application} [built] [failed] [1 error]
+    + 4 hidden modules
+
+ERROR in ./app/javascript/src/application.css (./node_modules/css-loader/dist/cjs.js??ref--5-1!./node_modules/postcss-loader/src??ref--5-2!./app/javascript/src/application.css)
+Module build failed (from ./node_modules/postcss-loader/src/index.js):
+Error: Failed to find 'trix/dist/trix'
+  in [
+    /home/mattstudy/matgram/app/javascript/src
+  ]
+    at /home/mattstudy/matgram/node_modules/postcss-import/lib/resolve-id.js:35:13
+    at async Promise.all (index 0)
+ @ ./app/javascript/src/application.css 2:26-171
+ @ ./app/javascript/packs/application.js
+
+  Rendered layout layouts/application.html.erb (Duration: 1234.7ms | Allocations: 9538)
+Completed 200 OK in 1237ms (Views: 1233.9ms | ActiveRecord: 1.7ms | Allocations: 12336)
+
+
+Started GET "/" for ::1 at 2022-09-25 22:27:48 -0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:3
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1352)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.0ms | Allocations: 3894)
+Completed 200 OK in 6ms (Views: 3.9ms | ActiveRecord: 1.5ms | Allocations: 4751)
+
+
+Started GET "/" for ::1 at 2022-09-25 22:27:51 -0300
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:3
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 885)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.0ms | Allocations: 3453)
+Completed 200 OK in 7ms (Views: 5.8ms | ActiveRecord: 0.5ms | Allocations: 3864)
+
+
