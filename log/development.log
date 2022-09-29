@@ -431,3 +431,1748 @@ Error: Failed to find 'trix/dist/trix'
 Completed 200 OK in 1194ms (Views: 1185.7ms | ActiveRecord: 2.3ms | Allocations: 18819)
 
 
+Started GET "/" for ::1 at 2022-09-28 00:04:25 -0300
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+Completed 401 Unauthorized in 4ms (ActiveRecord: 0.0ms | Allocations: 1670)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-09-28 00:04:25 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/authentication.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/authentication
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 625)
+  Rendered devise/sessions/new.html.erb within layouts/authentication (Duration: 3.5ms | Allocations: 3084)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/authentication.html.erb (Duration: 15.8ms | Allocations: 9088)
+Completed 200 OK in 26ms (Views: 17.8ms | ActiveRecord: 3.2ms | Allocations: 16664)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-09-28 00:04:26 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/authentication.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/authentication
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 166)
+  Rendered devise/sessions/new.html.erb within layouts/authentication (Duration: 1.3ms | Allocations: 1261)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/authentication.html.erb (Duration: 3.2ms | Allocations: 3762)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms | Allocations: 4310)
+
+
+Started GET "/" for ::1 at 2022-09-28 00:04:38 -0300
+Processing by PostsController#index as HTML
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms | Allocations: 219)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-09-28 00:04:38 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/authentication.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/authentication
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 166)
+  Rendered devise/sessions/new.html.erb within layouts/authentication (Duration: 1.0ms | Allocations: 1254)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/authentication.html.erb (Duration: 2.8ms | Allocations: 3756)
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.0ms | Allocations: 4307)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-09-28 00:07:45 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/authentication.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/authentication
+  Rendered devise/shared/_links.html.erb (Duration: 0.5ms | Allocations: 542)
+  Rendered devise/sessions/new.html.erb within layouts/authentication (Duration: 1.4ms | Allocations: 1416)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/authentication.html.erb (Duration: 3.6ms | Allocations: 4124)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.0ms | Allocations: 5107)
+
+
+Started GET "/users/sign_up" for ::1 at 2022-09-28 00:07:47 -0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/authentication.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/authentication
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.5ms | Allocations: 218)
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 146)
+  Rendered devise/registrations/new.html.erb within layouts/authentication (Duration: 2.9ms | Allocations: 1992)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/authentication.html.erb (Duration: 5.0ms | Allocations: 4459)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.0ms | Allocations: 5298)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-09-28 00:09:04 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/authentication.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/authentication
+  Rendered devise/shared/_links.html.erb (Duration: 1.5ms | Allocations: 542)
+  Rendered devise/sessions/new.html.erb within layouts/authentication (Duration: 3.4ms | Allocations: 1409)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/authentication.html.erb (Duration: 8.1ms | Allocations: 4112)
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.0ms | Allocations: 5091)
+
+
+Started GET "/users/sign_up" for ::1 at 2022-09-28 00:09:07 -0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/authentication.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/authentication
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.8ms | Allocations: 209)
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 112)
+  Rendered devise/registrations/new.html.erb within layouts/authentication (Duration: 3.8ms | Allocations: 1879)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/authentication.html.erb (Duration: 6.5ms | Allocations: 4381)
+Completed 200 OK in 9ms (Views: 7.5ms | ActiveRecord: 0.0ms | Allocations: 5110)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-09-28 00:09:09 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/authentication.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/authentication
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 167)
+  Rendered devise/sessions/new.html.erb within layouts/authentication (Duration: 2.5ms | Allocations: 726)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/authentication.html.erb (Duration: 7.9ms | Allocations: 3227)
+Completed 200 OK in 11ms (Views: 8.8ms | ActiveRecord: 0.0ms | Allocations: 3760)
+
+
+Started GET "/users/sign_up" for ::1 at 2022-09-28 00:09:10 -0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/authentication.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/authentication
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 110)
+  Rendered devise/registrations/new.html.erb within layouts/authentication (Duration: 8.1ms | Allocations: 1269)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/authentication.html.erb (Duration: 10.0ms | Allocations: 3774)
+Completed 200 OK in 11ms (Views: 10.3ms | ActiveRecord: 0.0ms | Allocations: 4260)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-09-28 00:09:12 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/authentication.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/authentication
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 166)
+  Rendered devise/sessions/new.html.erb within layouts/authentication (Duration: 1.8ms | Allocations: 717)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/authentication.html.erb (Duration: 6.9ms | Allocations: 3217)
+Completed 200 OK in 9ms (Views: 7.5ms | ActiveRecord: 0.0ms | Allocations: 3750)
+
+
+Started GET "/users/sign_up" for ::1 at 2022-09-28 00:09:13 -0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/authentication.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/authentication
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 110)
+  Rendered devise/registrations/new.html.erb within layouts/authentication (Duration: 3.3ms | Allocations: 1264)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/authentication.html.erb (Duration: 5.2ms | Allocations: 3764)
+Completed 200 OK in 7ms (Views: 5.7ms | ActiveRecord: 0.0ms | Allocations: 4251)
+
+
+Started GET "/users/sign_up" for ::1 at 2022-09-28 00:12:33 -0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/authentication.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/authentication
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.3ms | Allocations: 210)
+  Rendered devise/registrations/new.html.erb within layouts/authentication (Duration: 1.3ms | Allocations: 1460)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/authentication.html.erb (Duration: 3.2ms | Allocations: 4163)
+Completed 200 OK in 5ms (Views: 4.0ms | Allocations: 5090)
+
+
+Started GET "/users/sign_up" for ::1 at 2022-09-28 00:12:49 -0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/authentication.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/authentication
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.3ms | Allocations: 209)
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 478)
+  Rendered devise/registrations/new.html.erb within layouts/authentication (Duration: 2.0ms | Allocations: 2101)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/authentication.html.erb (Duration: 3.9ms | Allocations: 4809)
+Completed 200 OK in 5ms (Views: 4.7ms | Allocations: 5735)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-09-28 00:13:53 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/authentication.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/authentication
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 167)
+  Rendered devise/sessions/new.html.erb within layouts/authentication (Duration: 2.7ms | Allocations: 906)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/authentication.html.erb (Duration: 6.3ms | Allocations: 3407)
+Completed 200 OK in 9ms (Views: 8.0ms | Allocations: 4172)
+
+
+Started GET "/users/sign_up" for ::1 at 2022-09-28 00:14:16 -0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/authentication.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/authentication
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 111)
+  Rendered devise/registrations/new.html.erb within layouts/authentication (Duration: 1.5ms | Allocations: 1046)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/authentication.html.erb (Duration: 3.6ms | Allocations: 3547)
+Completed 200 OK in 5ms (Views: 4.2ms | Allocations: 4032)
+
+
+Started POST "/users" for ::1 at 2022-09-28 00:14:39 -0300
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"matias", "username"=>"matias,arenhard", "email"=>"matias_arenhard@hotmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Cadastrar"}
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (1.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "matias_arenhard@hotmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "matias,arenhard"], ["LIMIT", 1]]
+  [1m[36mUser Create (1.1ms)[0m  [1m[32mINSERT INTO "users" ("name", "username", "email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "matias"], ["username", "matias,arenhard"], ["email", "matias_arenhard@hotmail.com"], ["encrypted_password", "$2a$12$XR86u8.NxnbhxZQmYiT3qOdixRLJVG6TyoNitfrgfEQ1flOyVNW0i"], ["created_at", "2022-09-28 03:14:39.753699"], ["updated_at", "2022-09-28 03:14:39.753699"]]
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 192ms (ActiveRecord: 8.9ms | Allocations: 15744)
+
+
+Started GET "/" for ::1 at 2022-09-28 00:14:39 -0300
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:3
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1660)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.9ms | Allocations: 4601)
+Completed 200 OK in 11ms (Views: 4.5ms | ActiveRecord: 3.1ms | Allocations: 7588)
+
+
+Started GET "/users/sign_up" for ::1 at 2022-09-28 00:18:18 -0300
+Processing by Devise::RegistrationsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 9ms (ActiveRecord: 3.1ms | Allocations: 6465)
+
+
+Started GET "/" for ::1 at 2022-09-28 00:18:18 -0300
+  
+AbstractController::ActionNotFound (The action 'index
+  ' could not be found for PostsController
+Did you mean?  index
+               new
+               create
+               show):
+  
+actionpack (6.1.7) lib/abstract_controller/base.rb:160:in `process'
+actionview (6.1.7) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.7) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.7) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.7) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.7) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.7) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.7) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.7) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.7) lib/action_dispatch/routing/route_set.rb:842:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.4) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.4) lib/rack/etag.rb:27:in `call'
+rack (2.2.4) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.4) lib/rack/head.rb:12:in `call'
+actionpack (6.1.7) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.7) lib/action_dispatch/http/content_security_policy.rb:19:in `call'
+rack (2.2.4) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.4) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.7) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.7) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.7) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.7) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.7) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.7) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.7) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.7) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.7) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.7) lib/action_dispatch/middleware/host_authorization.rb:148:in `call'
+rack-mini-profiler (2.3.4) lib/mini_profiler/profiler.rb:393:in `call'
+webpacker (5.4.3) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.4) lib/rack/proxy.rb:78:in `call'
+railties (6.1.7) lib/rails/engine.rb:539:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for ::1 at 2022-09-28 00:18:58 -0300
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:3
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1391)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | Allocations: 4438)
+Completed 200 OK in 15ms (Views: 4.3ms | ActiveRecord: 4.5ms | Allocations: 12783)
+
+
+Started GET "/" for ::1 at 2022-09-28 00:23:54 -0300
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:3
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 907)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 4.8ms | Allocations: 3840)
+Completed 200 OK in 9ms (Views: 5.1ms | ActiveRecord: 1.2ms | Allocations: 6415)
+
+
+Started GET "/" for ::1 at 2022-09-28 00:23:55 -0300
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:3
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 716)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 3.0ms | Allocations: 3320)
+Completed 200 OK in 6ms (Views: 2.7ms | ActiveRecord: 1.1ms | Allocations: 5007)
+
+
+Started GET "/" for ::1 at 2022-09-28 00:23:56 -0300
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:3
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 716)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 3.8ms | Allocations: 3320)
+Completed 200 OK in 7ms (Views: 3.5ms | ActiveRecord: 1.1ms | Allocations: 4995)
+
+
+Started GET "/" for ::1 at 2022-09-28 00:23:56 -0300
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:3
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 716)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 3.2ms | Allocations: 3320)
+Completed 200 OK in 9ms (Views: 2.9ms | ActiveRecord: 1.7ms | Allocations: 4997)
+
+
+Started GET "/" for ::1 at 2022-09-28 00:23:56 -0300
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:3
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 716)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 3.1ms | Allocations: 3320)
+Completed 200 OK in 6ms (Views: 2.8ms | ActiveRecord: 1.0ms | Allocations: 4995)
+
+
+Started GET "/" for ::1 at 2022-09-28 00:23:58 -0300
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Exists? (1.5ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:3
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 716)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | Allocations: 3325)
+Completed 200 OK in 17ms (Views: 8.6ms | ActiveRecord: 2.9ms | Allocations: 5001)
+
+
+Started GET "/" for ::1 at 2022-09-28 00:23:59 -0300
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:3
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 716)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 3.2ms | Allocations: 3320)
+Completed 200 OK in 7ms (Views: 2.9ms | ActiveRecord: 1.1ms | Allocations: 4995)
+
+
+Started GET "/" for ::1 at 2022-09-28 00:24:48 -0300
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:3
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1554)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | Allocations: 7826)
+Completed 200 OK in 21ms (Views: 6.8ms | ActiveRecord: 4.6ms | Allocations: 18820)
+
+
+Started GET "/" for ::1 at 2022-09-28 00:24:49 -0300
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:3
+  Rendered posts/index.html.erb within layouts/application (Duration: 8.3ms | Allocations: 718)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.3ms | Allocations: 3328)
+Completed 200 OK in 13ms (Views: 10.2ms | ActiveRecord: 0.9ms | Allocations: 5026)
+
+
+Started GET "/" for ::1 at 2022-09-28 00:25:35 -0300
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:3
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1554)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 7826)
+Completed 200 OK in 21ms (Views: 6.8ms | ActiveRecord: 4.6ms | Allocations: 18820)
+
+
+Started GET "/posts/new" for ::1 at 2022-09-28 00:25:38 -0300
+Processing by PostsController#new as HTML
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 43.9ms | Allocations: 128907)
+  Rendered posts/new.html.erb within layouts/application (Duration: 44.3ms | Allocations: 129219)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 46.2ms | Allocations: 131832)
+Completed 200 OK in 64ms (Views: 46.5ms | ActiveRecord: 3.2ms | Allocations: 135219)
+
+
+Started POST "/posts" for ::1 at 2022-09-28 00:25:40 -0300
+Processing by PostsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "post"=>{"description"=>"sadasda"}, "commit"=>"Criar Post"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:18:in `create'
+  [1m[36mPost Create (0.8ms)[0m  [1m[32mINSERT INTO "posts" ("description", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["description", "sadasda"], ["created_at", "2022-09-28 03:25:40.777319"], ["updated_at", "2022-09-28 03:25:40.777319"]]
+  ↳ app/controllers/posts_controller.rb:18:in `create'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:18:in `create'
+Redirected to http://localhost:3000/posts/1
+Completed 302 Found in 7ms (ActiveRecord: 2.9ms | Allocations: 3915)
+
+
+Started GET "/posts/1" for ::1 at 2022-09-28 00:25:40 -0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:28:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_post.html.erb (Duration: 3.7ms | Allocations: 3851)
+  Rendered posts/show.html.erb within layouts/application (Duration: 5.1ms | Allocations: 4562)
+  Rendered layout layouts/application.html.erb (Duration: 5.1ms | Allocations: 4627)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.8ms | Allocations: 7075)
+
+
+  
+ActionView::Template::Error (undefined method `created_by' for #<Post:0x0000564bc47b5960>
+Did you mean?  created_at
+               created_at?
+               created_at=):
+    1: <article class="post">
+    2:   <header>
+    3:     <nav>
+    4:       <%= user_avatar(post.created_by) %>
+    5:       <h4><%= post.created_by.username %></h4>
+    6:     </nav>
+    7: 
+  
+app/views/posts/_post.html.erb:4
+app/views/posts/show.html.erb:3
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2699561720942175810)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddCreatedByIdColumnToPosts (20220928032907)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.7ms)[0m  [1m[35mALTER TABLE "posts" ADD "created_by_id" bigint NOT NULL[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(2699561720942175810)[0m
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mPost Destroy (22.1ms)[0m  [1m[31mDELETE FROM "posts"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2699561720942175810)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddCreatedByIdColumnToPosts (20220928032907)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "posts" ADD "created_by_id" bigint NOT NULL[0m
+  [1m[35m (8.7ms)[0m  [1m[35mCREATE INDEX "index_posts_on_created_by_id" ON "posts" ("created_by_id")[0m
+  [1m[35m (2.8ms)[0m  [1m[35mALTER TABLE "posts" ADD CONSTRAINT "fk_rails_acf8434a89"
+FOREIGN KEY ("created_by_id")
+  REFERENCES "users" ("id")
+[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220928032907"]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(2699561720942175810)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2022-09-28 00:36:19 -0300
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 3.8ms | Allocations: 12114)
+
+
+  
+ArgumentError (Unknown validator: 'AttachedValidator'):
+  
+app/models/post.rb:10:in `<class:Post>'
+app/models/post.rb:1:in `<main>'
+app/controllers/posts_controller.rb:6:in `index'
+Started GET "/" for ::1 at 2022-09-28 00:36:50 -0300
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:3
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1494)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 7767)
+Completed 200 OK in 20ms (Views: 7.0ms | ActiveRecord: 4.3ms | Allocations: 17738)
+
+
+Started GET "/posts/new" for ::1 at 2022-09-28 00:36:52 -0300
+Processing by PostsController#new as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 61.7ms | Allocations: 128897)
+  Rendered posts/new.html.erb within layouts/application (Duration: 62.3ms | Allocations: 129203)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 67.1ms | Allocations: 131816)
+Completed 200 OK in 79ms (Views: 67.3ms | ActiveRecord: 4.1ms | Allocations: 135581)
+
+
+Started POST "/posts" for ::1 at 2022-09-28 00:36:54 -0300
+Processing by PostsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "post"=>{"description"=>"asdsad"}, "commit"=>"Criar Post"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 0.6ms | Allocations: 576)
+  Rendered posts/new.html.erb within layouts/application (Duration: 0.7ms | Allocations: 664)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 2.5ms | Allocations: 3198)
+Completed 200 OK in 17ms (Views: 2.8ms | ActiveRecord: 0.5ms | Allocations: 7664)
+
+
+Started POST "/posts" for ::1 at 2022-09-28 00:38:25 -0300
+Processing by PostsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "post"=>{"description"=>"asdsad"}, "commit"=>"Criar Post"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:18:in `create'
+  [1m[36mPost Create (0.7ms)[0m  [1m[32mINSERT INTO "posts" ("description", "created_at", "updated_at", "created_by_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["description", "asdsad"], ["created_at", "2022-09-28 03:38:25.081850"], ["updated_at", "2022-09-28 03:38:25.081850"], ["created_by_id", 1]]
+  ↳ app/controllers/posts_controller.rb:18:in `create'
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:18:in `create'
+Redirected to http://localhost:3000/posts/2
+Completed 302 Found in 19ms (ActiveRecord: 7.7ms | Allocations: 14010)
+
+
+Started GET "/posts/2" for ::1 at 2022-09-28 00:38:25 -0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:28:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_post.html.erb:4
+  Rendered posts/_post.html.erb (Duration: 6.8ms | Allocations: 6002)
+  Rendered posts/show.html.erb within layouts/application (Duration: 7.6ms | Allocations: 6651)
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 6715)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 1.3ms | Allocations: 9280)
+
+
+  
+ActionView::Template::Error (undefined method `avatar' for #<User:0x000055bc10f66ab8>):
+    1: <article class="post">
+    2:   <header>
+    3:     <nav>
+    4:       <%= user_avatar(post.created_by) %>
+    5:       <h4><%= post.created_by.username %></h4>
+    6:     </nav>
+    7: 
+  
+app/helpers/application_helper.rb:7:in `user_avatar'
+app/views/posts/_post.html.erb:4
+app/views/posts/show.html.erb:3
+Started GET "/posts/2" for ::1 at 2022-09-28 00:41:37 -0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:28:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_post.html.erb:4
+  Rendered posts/_post.html.erb (Duration: 4.6ms | Allocations: 5244)
+  Rendered posts/show.html.erb within layouts/application (Duration: 4.8ms | Allocations: 5386)
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | Allocations: 5450)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 5.7ms | Allocations: 17310)
+
+
+  
+ActionView::Template::Error (undefined method `avatar' for #<User:0x00007f1bd9286300>):
+    1: <article class="post">
+    2:   <header>
+    3:     <nav>
+    4:       <%= user_avatar(post.created_by) %>
+    5:       <h4><%= post.created_by.username %></h4>
+    6:     </nav>
+    7: 
+  
+app/helpers/application_helper.rb:7:in `user_avatar'
+app/views/posts/_post.html.erb:4
+app/views/posts/show.html.erb:3
+Started GET "/" for ::1 at 2022-09-28 00:47:05 -0300
+Processing by PostsController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 181)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-09-28 00:47:05 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/authentication.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/authentication
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 618)
+  Rendered devise/sessions/new.html.erb within layouts/authentication (Duration: 1.9ms | Allocations: 1664)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/authentication.html.erb (Duration: 4.0ms | Allocations: 4339)
+Completed 200 OK in 6ms (Views: 4.7ms | ActiveRecord: 0.0ms | Allocations: 5619)
+
+
+Started GET "/users/sign_up" for ::1 at 2022-09-28 00:47:08 -0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/authentication.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/authentication
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.3ms | Allocations: 215)
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 146)
+  Rendered devise/registrations/new.html.erb within layouts/authentication (Duration: 1.8ms | Allocations: 1689)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/authentication.html.erb (Duration: 3.7ms | Allocations: 4150)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.0ms | Allocations: 4974)
+
+
+Started POST "/users" for ::1 at 2022-09-28 00:47:25 -0300
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"matias", "username"=>"matias.arenhard", "email"=>"matias_arenhard@hotmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Cadastrar"}
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.8ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "matias_arenhard@hotmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "matias.arenhard"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mROLLBACK[0m
+  Rendering layout layouts/authentication.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/authentication
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.6ms | Allocations: 595)
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 110)
+  Rendered devise/registrations/new.html.erb within layouts/authentication (Duration: 1.8ms | Allocations: 1880)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/authentication.html.erb (Duration: 3.9ms | Allocations: 4324)
+Completed 200 OK in 190ms (Views: 4.1ms | ActiveRecord: 6.3ms | Allocations: 16217)
+
+
+Started POST "/users" for ::1 at 2022-09-28 00:47:50 -0300
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"matias2", "username"=>"matias.arenhard2", "email"=>"matias_arenhar1d@hotmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Cadastrar"}
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "matias_arenhar1d@hotmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "matias.arenhard2"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "username", "email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "matias2"], ["username", "matias.arenhard2"], ["email", "matias_arenhar1d@hotmail.com"], ["encrypted_password", "$2a$12$3yNMqE/co5v0KkTJmvK2vO7WdkckTBooCCU7BxisZbrplqYms0u4K"], ["created_at", "2022-09-28 03:47:50.764567"], ["updated_at", "2022-09-28 03:47:50.764567"]]
+  [1m[36mTRANSACTION (4.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 180ms (ActiveRecord: 6.7ms | Allocations: 7111)
+
+
+Started GET "/" for ::1 at 2022-09-28 00:47:50 -0300
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:3
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:4
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_post.html.erb:4
+  Rendered collection of posts/_post.html.erb [1 times] (Duration: 4.6ms | Allocations: 4955)
+  Rendered posts/index.html.erb within layouts/application (Duration: 7.1ms | Allocations: 6802)
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 6866)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 2.3ms | Allocations: 9566)
+
+
+  
+ActionView::Template::Error (undefined method `avatar' for #<User:0x00007f1bd9069e28>):
+    1: <article class="post">
+    2:   <header>
+    3:     <nav>
+    4:       <%= user_avatar(post.created_by) %>
+    5:       <h4><%= post.created_by.username %></h4>
+    6:     </nav>
+    7: 
+  
+app/helpers/application_helper.rb:7:in `user_avatar'
+app/views/posts/_post.html.erb:4
+app/views/posts/index.html.erb:4
+Started GET "/posts/2" for ::1 at 2022-09-28 00:48:52 -0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:28:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_post.html.erb:4
+  Rendered posts/_post.html.erb (Duration: 37.6ms | Allocations: 6678)
+  Rendered posts/show.html.erb within layouts/application (Duration: 38.4ms | Allocations: 7184)
+  Rendered layout layouts/application.html.erb (Duration: 38.5ms | Allocations: 7249)
+Completed 500 Internal Server Error in 57ms (ActiveRecord: 8.4ms | Allocations: 19511)
+
+
+  
+ActionView::Template::Error (PG::UndefinedTable: ERROR:  relation "active_storage_attachments" does not exist
+LINE 8:  WHERE a.attrelid = '"active_storage_attachments"'::regclass
+                            ^
+):
+    13:   </header>
+    14: 
+    15:   <section class="image">
+    16:     <%= image_tag post.photo %>
+    17:   </section>
+    18: 
+    19:   <div class="details">
+  
+app/views/posts/_post.html.erb:16
+app/views/posts/show.html.erb:3
+Started GET "/posts/2" for ::1 at 2022-09-28 00:49:07 -0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPost Load (1.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:28:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_post.html.erb:4
+  Rendered posts/_post.html.erb (Duration: 4.0ms | Allocations: 3421)
+  Rendered posts/show.html.erb within layouts/application (Duration: 5.0ms | Allocations: 3920)
+  Rendered layout layouts/application.html.erb (Duration: 5.1ms | Allocations: 3984)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 2.9ms | Allocations: 7078)
+
+
+  
+ActionView::Template::Error (Missing partial likes/_like with {:locale=>[:"pt-BR"], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/home/mattstudy/matgram/app/views"
+  * "/home/mattstudy/.rvm/gems/ruby-2.7.5/gems/devise-i18n-1.10.2/app/views"
+  * "/home/mattstudy/.rvm/gems/ruby-2.7.5/gems/devise-4.8.1/app/views"
+  * "/home/mattstudy/.rvm/gems/ruby-2.7.5/gems/actiontext-6.1.7/app/views"
+  * "/home/mattstudy/.rvm/gems/ruby-2.7.5/gems/actionmailbox-6.1.7/app/views"
+):
+    19:   <div class="details">
+    20:     <section class="actions">
+    21:       <nav>
+    22:         <%= render "likes/like", post: post %>
+    23: 
+    24:         <div class="action">
+    25:           <%= link_to post do %>
+  
+app/views/posts/_post.html.erb:22
+app/views/posts/show.html.erb:3
+Started GET "/posts/2" for ::1 at 2022-09-28 00:49:41 -0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPost Load (1.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:28:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_post.html.erb:4
+  Rendered posts/_post.html.erb (Duration: 5.8ms | Allocations: 1983)
+  Rendered posts/show.html.erb within layouts/application (Duration: 16.7ms | Allocations: 9641)
+  Rendered layout layouts/application.html.erb (Duration: 16.8ms | Allocations: 9705)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 3.8ms | Allocations: 12799)
+
+
+  
+ActionView::Template::Error (uninitialized constant Post::Comment):
+     5: 
+     6:   <aside>
+     7:     <section class="comments" data-post-id="<%= @post.id %>">
+     8:       <% if @post.comments.any? %>
+     9:         <%= render @post.comments %>
+    10:       <% else %>
+    11:         Nenhum comentário ainda.
+  
+app/views/posts/show.html.erb:8
+Started GET "/" for ::1 at 2022-09-28 00:51:45 -0300
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:3
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:4
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_post.html.erb:4
+  Rendered collection of posts/_post.html.erb [1 times] (Duration: 2.4ms | Allocations: 1912)
+  Rendered posts/index.html.erb within layouts/application (Duration: 5.4ms | Allocations: 4679)
+  Rendered layout layouts/application.html.erb (Duration: 5.4ms | Allocations: 4743)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 2.1ms | Allocations: 6525)
+
+
+  
+ActionView::Template::Error ('nil' is not an ActiveModel-compatible object. It must implement :to_partial_path.):
+    13:     <section class="suggestions">
+    14:       <h4>Sugestões Para Você</h4>
+    15: 
+    16:       <%= render @suggested_users %>
+    17:     </section>
+    18:   </aside>
+    19: 
+  
+app/views/posts/index.html.erb:16
+Started GET "/" for ::1 at 2022-09-28 00:51:59 -0300
+Processing by PostsController#index as HTML
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms | Allocations: 168)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-09-28 00:51:59 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/authentication.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/authentication
+  Rendered devise/shared/_links.html.erb (Duration: 0.5ms | Allocations: 545)
+  Rendered devise/sessions/new.html.erb within layouts/authentication (Duration: 1.6ms | Allocations: 1424)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/authentication.html.erb (Duration: 3.9ms | Allocations: 4093)
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.0ms | Allocations: 5131)
+
+
+Started GET "/users/sign_up" for ::1 at 2022-09-28 00:52:15 -0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/authentication.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/authentication
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.3ms | Allocations: 209)
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 118)
+  Rendered devise/registrations/new.html.erb within layouts/authentication (Duration: 1.8ms | Allocations: 1619)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/authentication.html.erb (Duration: 3.7ms | Allocations: 4080)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.0ms | Allocations: 4904)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-09-28 00:52:19 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/authentication.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/authentication
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 167)
+  Rendered devise/sessions/new.html.erb within layouts/authentication (Duration: 0.8ms | Allocations: 726)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/authentication.html.erb (Duration: 2.8ms | Allocations: 3227)
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.0ms | Allocations: 3760)
+
+
+Started GET "/users/password/new" for ::1 at 2022-09-28 00:52:23 -0300
+Processing by Devise::PasswordsController#new as HTML
+  Rendering layout layouts/authentication.html.erb
+  Rendering devise/passwords/new.html.erb within layouts/authentication
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.2ms | Allocations: 41)
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 169)
+  Rendered devise/passwords/new.html.erb within layouts/authentication (Duration: 4.0ms | Allocations: 961)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/authentication.html.erb (Duration: 8.6ms | Allocations: 3405)
+Completed 200 OK in 12ms (Views: 9.9ms | ActiveRecord: 0.0ms | Allocations: 4192)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-09-28 00:52:27 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/authentication.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/authentication
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 167)
+  Rendered devise/sessions/new.html.erb within layouts/authentication (Duration: 0.8ms | Allocations: 726)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/authentication.html.erb (Duration: 3.2ms | Allocations: 3227)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms | Allocations: 3762)
+
+
+Started GET "/users/password/new" for ::1 at 2022-09-28 00:52:34 -0300
+Processing by Devise::PasswordsController#new as HTML
+  Rendering layout layouts/authentication.html.erb
+  Rendering devise/passwords/new.html.erb within layouts/authentication
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 41)
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 163)
+  Rendered devise/passwords/new.html.erb within layouts/authentication (Duration: 0.8ms | Allocations: 736)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/authentication.html.erb (Duration: 2.8ms | Allocations: 3219)
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.0ms | Allocations: 3684)
+
+
+Started GET "/users/sign_up" for ::1 at 2022-09-28 00:52:37 -0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/authentication.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/authentication
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 111)
+  Rendered devise/registrations/new.html.erb within layouts/authentication (Duration: 2.7ms | Allocations: 1046)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/authentication.html.erb (Duration: 4.6ms | Allocations: 3547)
+Completed 200 OK in 7ms (Views: 5.2ms | ActiveRecord: 0.0ms | Allocations: 4032)
+
+
+Started GET "/" for ::1 at 2022-09-29 20:04:06 -0300
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+Completed 401 Unauthorized in 4ms (ActiveRecord: 0.0ms | Allocations: 1670)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-09-29 20:04:07 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/authentication.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/authentication
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 620)
+  Rendered devise/sessions/new.html.erb within layouts/authentication (Duration: 2.5ms | Allocations: 1933)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/authentication.html.erb (Duration: 12.7ms | Allocations: 7934)
+Completed 200 OK in 23ms (Views: 14.9ms | ActiveRecord: 3.7ms | Allocations: 15131)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-09-29 20:04:07 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/authentication.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/authentication
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 167)
+  Rendered devise/sessions/new.html.erb within layouts/authentication (Duration: 0.8ms | Allocations: 724)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/authentication.html.erb (Duration: 2.7ms | Allocations: 3224)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.0ms | Allocations: 3759)
+
+
+Started POST "/users/sign_in" for ::1 at 2022-09-29 20:04:16 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"matias_arenhard@hotmail.com", "password"=>"[FILTERED]"}, "commit"=>"Entrar"}
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "matias_arenhard@hotmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 185ms (ActiveRecord: 2.5ms | Allocations: 5466)
+
+
+Started GET "/" for ::1 at 2022-09-29 20:04:16 -0300
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Exists? (1.1ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:3
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:4
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_post.html.erb:4
+  Rendered collection of posts/_post.html.erb [1 times] (Duration: 5.8ms | Allocations: 4021)
+  Rendered posts/index.html.erb within layouts/application (Duration: 18.0ms | Allocations: 9396)
+  Rendered layout layouts/application.html.erb (Duration: 18.1ms | Allocations: 9461)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 5.4ms | Allocations: 14274)
+
+
+  
+ActionView::Template::Error ('nil' is not an ActiveModel-compatible object. It must implement :to_partial_path.):
+    13:     <section class="suggestions">
+    14:       <h4>Sugestões Para Você</h4>
+    15: 
+    16:       <%= render @suggested_users %>
+    17:     </section>
+    18:   </aside>
+    19: 
+  
+app/views/posts/index.html.erb:16
+Started GET "/" for ::1 at 2022-09-29 20:05:12 -0300
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Exists? (0.8ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:3
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:4
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_post.html.erb:4
+  Rendered collection of posts/_post.html.erb [1 times] (Duration: 2.5ms | Allocations: 2092)
+  Rendered posts/index.html.erb within layouts/application (Duration: 6.1ms | Allocations: 3942)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 6840)
+Completed 200 OK in 15ms (Views: 7.0ms | ActiveRecord: 3.2ms | Allocations: 9683)
+
+
+Started GET "/posts/new" for ::1 at 2022-09-29 20:05:20 -0300
+Processing by PostsController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 10.8ms | Allocations: 3069)
+  Rendered posts/new.html.erb within layouts/application (Duration: 11.3ms | Allocations: 3375)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.2ms | Allocations: 5888)
+Completed 200 OK in 19ms (Views: 13.4ms | ActiveRecord: 0.5ms | Allocations: 7684)
+
+
+Started POST "/posts" for ::1 at 2022-09-29 20:05:22 -0300
+Processing by PostsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "post"=>{"description"=>"asdasdad"}, "commit"=>"Criar Post"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:18:in `create'
+  [1m[36mPost Create (1.5ms)[0m  [1m[32mINSERT INTO "posts" ("description", "created_at", "updated_at", "created_by_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["description", "asdasdad"], ["created_at", "2022-09-29 23:05:22.664988"], ["updated_at", "2022-09-29 23:05:22.664988"], ["created_by_id", 1]]
+  ↳ app/controllers/posts_controller.rb:18:in `create'
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:18:in `create'
+Redirected to http://localhost:3000/posts/3
+Completed 302 Found in 8ms (ActiveRecord: 4.0ms | Allocations: 4244)
+
+
+Started GET "/posts/3" for ::1 at 2022-09-29 20:05:22 -0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:28:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_post.html.erb:4
+  Rendered posts/_post.html.erb (Duration: 2.2ms | Allocations: 1912)
+  Rendered posts/show.html.erb within layouts/application (Duration: 5.1ms | Allocations: 6641)
+  Rendered layout layouts/application.html.erb (Duration: 5.1ms | Allocations: 6705)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 1.2ms | Allocations: 9143)
+
+
+  
+ActionView::Template::Error (uninitialized constant Post::Comment):
+     5: 
+     6:   <aside>
+     7:     <section class="comments" data-post-id="<%= @post.id %>">
+     8:       <% if @post.comments.any? %>
+     9:         <%= render @post.comments %>
+    10:       <% else %>
+    11:         Nenhum comentário ainda.
+  
+app/views/posts/show.html.erb:8
+Started GET "/posts/new" for ::1 at 2022-09-29 20:05:27 -0300
+Processing by PostsController#new as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 1.6ms | Allocations: 572)
+  Rendered posts/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 660)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.1ms | Allocations: 3272)
+Completed 200 OK in 11ms (Views: 5.7ms | ActiveRecord: 0.7ms | Allocations: 4959)
+
+
+Started GET "/posts/new" for ::1 at 2022-09-29 20:05:56 -0300
+Processing by PostsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 0.9ms | Allocations: 735)
+  Rendered posts/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1038)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_user_actions_modal.html.erb (Duration: 8.0ms | Allocations: 4504)
+  Rendered layout layouts/application.html.erb (Duration: 12.6ms | Allocations: 8660)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.4ms | Allocations: 11184)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `edit_profile_path' for #<ActionView::Base:0x0000000000a230>
+Did you mean?  edit_password_path):
+    1: <div id="user-actions" class="modal">
+    2:   <div class="user-action">
+    3:     <%= link_to "Editar seu perfil", edit_profile_path %>
+    4:   </div>
+    5: 
+    6:   <div class="user-action">
+  
+app/views/layouts/_user_actions_modal.html.erb:3
+app/views/layouts/application.html.erb:37
+Started GET "/posts/new" for ::1 at 2022-09-29 20:06:45 -0300
+Processing by PostsController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 0.8ms | Allocations: 630)
+  Rendered posts/new.html.erb within layouts/application (Duration: 0.9ms | Allocations: 718)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_user_actions_modal.html.erb (Duration: 0.1ms | Allocations: 126)
+  Rendered layout layouts/application.html.erb (Duration: 4.0ms | Allocations: 3473)
+Completed 200 OK in 22ms (Views: 4.5ms | ActiveRecord: 5.2ms | Allocations: 14750)
+
+
+Started POST "/posts" for ::1 at 2022-09-29 20:06:50 -0300
+Processing by PostsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "post"=>{"description"=>"asdasd"}, "commit"=>"Criar Post"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:18:in `create'
+  [1m[36mPost Create (1.3ms)[0m  [1m[32mINSERT INTO "posts" ("description", "created_at", "updated_at", "created_by_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["description", "asdasd"], ["created_at", "2022-09-29 23:06:50.597262"], ["updated_at", "2022-09-29 23:06:50.597262"], ["created_by_id", 1]]
+  ↳ app/controllers/posts_controller.rb:18:in `create'
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:18:in `create'
+Redirected to http://localhost:3000/posts/4
+Completed 302 Found in 11ms (ActiveRecord: 4.4ms | Allocations: 4562)
+
+
+Started GET "/posts/4" for ::1 at 2022-09-29 20:06:50 -0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:28:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_post.html.erb:4
+  Rendered posts/_post.html.erb (Duration: 2.8ms | Allocations: 2073)
+  Rendered posts/show.html.erb within layouts/application (Duration: 4.2ms | Allocations: 6091)
+  Rendered layout layouts/application.html.erb (Duration: 4.3ms | Allocations: 6156)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 1.6ms | Allocations: 8596)
+
+
+  
+ActionView::Template::Error (uninitialized constant Post::Comment):
+     5: 
+     6:   <aside>
+     7:     <section class="comments" data-post-id="<%= @post.id %>">
+     8:       <% if @post.comments.any? %>
+     9:         <%= render @post.comments %>
+    10:       <% else %>
+    11:         Nenhum comentário ainda.
+  
+app/views/posts/show.html.erb:8
+Started GET "/posts/4" for ::1 at 2022-09-29 20:07:21 -0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPost Load (1.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:28:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_post.html.erb:4
+  Rendered posts/_post.html.erb (Duration: 4.5ms | Allocations: 1911)
+  Rendered posts/show.html.erb within layouts/application (Duration: 13.0ms | Allocations: 6534)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_user_actions_modal.html.erb (Duration: 0.3ms | Allocations: 240)
+  Rendered layout layouts/application.html.erb (Duration: 15.7ms | Allocations: 9708)
+Completed 200 OK in 28ms (Views: 16.6ms | ActiveRecord: 4.0ms | Allocations: 12829)
+
+
+Started GET "/posts/4" for ::1 at 2022-09-29 20:13:26 -0300
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:28:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_post.html.erb:4
+  Rendered posts/_post.html.erb (Duration: 52.2ms | Allocations: 135095)
+  Rendered posts/show.html.erb within layouts/application (Duration: 54.6ms | Allocations: 138239)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: 614e8790e54f726a7651
+Version: webpack 4.46.0
+Time: 854ms
+Built at: 09/29/2022 8:13:27 PM
+                                        Asset      Size          Chunks                         Chunk Names
+       js/application-ea2c8a70f02c68aa3af0.js  95.9 KiB     application  [emitted] [immutable]  application
+   js/application-ea2c8a70f02c68aa3af0.js.map   105 KiB     application  [emitted] [dev]        application
+    js/authentication-49d31312f0ec28351937.js  39.5 KiB  authentication  [emitted] [immutable]  authentication
+js/authentication-49d31312f0ec28351937.js.map  39.8 KiB  authentication  [emitted] [dev]        authentication
+     js/flashMessages-754b9186e7eb9ef59007.js  20.9 KiB   flashMessages  [emitted] [immutable]  flashMessages
+ js/flashMessages-754b9186e7eb9ef59007.js.map    21 KiB   flashMessages  [emitted] [dev]        flashMessages
+                                manifest.json  1.05 KiB                  [emitted]              
+Entrypoint application = js/application-ea2c8a70f02c68aa3af0.js js/application-ea2c8a70f02c68aa3af0.js.map
+Entrypoint authentication = js/authentication-49d31312f0ec28351937.js js/authentication-49d31312f0ec28351937.js.map
+Entrypoint flashMessages = js/flashMessages-754b9186e7eb9ef59007.js js/flashMessages-754b9186e7eb9ef59007.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 512 bytes {application} [built]
+[./app/javascript/packs/authentication.js] 61 bytes {authentication} [built]
+[./app/javascript/packs/flashMessages.js] 2.08 KiB {flashMessages} {application} {authentication} [built]
+[./app/javascript/src/application.css] 607 bytes {application} [built]
+[./app/javascript/src/authentication.css] 610 bytes {authentication} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./app/javascript/src/application.css] ./node_modules/css-loader/dist/cjs.js??ref--5-1!./node_modules/postcss-loader/src??ref--5-2!./app/javascript/src/application.css 311 bytes {application} [built] [failed] [1 error]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./app/javascript/src/authentication.css] ./node_modules/css-loader/dist/cjs.js??ref--5-1!./node_modules/postcss-loader/src??ref--5-2!./app/javascript/src/authentication.css 6 KiB {authentication} [built]
+    + 5 hidden modules
+
+ERROR in ./app/javascript/src/application.css (./node_modules/css-loader/dist/cjs.js??ref--5-1!./node_modules/postcss-loader/src??ref--5-2!./app/javascript/src/application.css)
+Module build failed (from ./node_modules/postcss-loader/src/index.js):
+Error: Failed to find 'trix/dist/trix'
+  in [
+    /home/mattstudy/matgram/app/javascript/src
+  ]
+    at /home/mattstudy/matgram/node_modules/postcss-import/lib/resolve-id.js:35:13
+    at async Promise.all (index 0)
+ @ ./app/javascript/src/application.css 2:26-171
+ @ ./app/javascript/packs/application.js
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve './modal' in '/home/mattstudy/matgram/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 10:0-17
+
+  Rendered layouts/_user_actions_modal.html.erb (Duration: 0.3ms | Allocations: 250)
+  Rendered layout layouts/application.html.erb (Duration: 1735.6ms | Allocations: 142843)
+Completed 200 OK in 1754ms (Views: 1736.2ms | ActiveRecord: 5.6ms | Allocations: 158713)
+
+
+Started GET "/posts/4" for ::1 at 2022-09-29 20:13:58 -0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPost Load (1.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:28:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_post.html.erb:4
+  Rendered posts/_post.html.erb (Duration: 3.8ms | Allocations: 1585)
+  Rendered posts/show.html.erb within layouts/application (Duration: 5.0ms | Allocations: 3204)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: d2e4a4a7b807f7cc032c
+Version: webpack 4.46.0
+Time: 703ms
+Built at: 09/29/2022 8:13:59 PM
+                                        Asset      Size          Chunks                         Chunk Names
+       js/application-e91f6c4d01a0e797c891.js   124 KiB     application  [emitted] [immutable]  application
+   js/application-e91f6c4d01a0e797c891.js.map   132 KiB     application  [emitted] [dev]        application
+    js/authentication-49d31312f0ec28351937.js  39.5 KiB  authentication  [emitted] [immutable]  authentication
+js/authentication-49d31312f0ec28351937.js.map  39.8 KiB  authentication  [emitted] [dev]        authentication
+     js/flashMessages-754b9186e7eb9ef59007.js  20.9 KiB   flashMessages  [emitted] [immutable]  flashMessages
+ js/flashMessages-754b9186e7eb9ef59007.js.map    21 KiB   flashMessages  [emitted] [dev]        flashMessages
+             js/modal-efedf721e216d3496540.js  38.3 KiB           modal  [emitted] [immutable]  modal
+         js/modal-efedf721e216d3496540.js.map    39 KiB           modal  [emitted] [dev]        modal
+                                manifest.json  1.34 KiB                  [emitted]              
+Entrypoint application = js/application-e91f6c4d01a0e797c891.js js/application-e91f6c4d01a0e797c891.js.map
+Entrypoint authentication = js/authentication-49d31312f0ec28351937.js js/authentication-49d31312f0ec28351937.js.map
+Entrypoint flashMessages = js/flashMessages-754b9186e7eb9ef59007.js js/flashMessages-754b9186e7eb9ef59007.js.map
+Entrypoint modal = js/modal-efedf721e216d3496540.js js/modal-efedf721e216d3496540.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 512 bytes {application} [built]
+[./app/javascript/packs/authentication.js] 61 bytes {authentication} [built]
+[./app/javascript/packs/flashMessages.js] 2.08 KiB {flashMessages} {application} {authentication} [built]
+[./app/javascript/packs/modal.js] 588 bytes {modal} {application} [built]
+[./app/javascript/src/application.css] 607 bytes {application} [built]
+[./app/javascript/src/authentication.css] 610 bytes {authentication} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./app/javascript/src/application.css] ./node_modules/css-loader/dist/cjs.js??ref--5-1!./node_modules/postcss-loader/src??ref--5-2!./app/javascript/src/application.css 311 bytes {application} [built] [failed] [1 error]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./app/javascript/src/authentication.css] ./node_modules/css-loader/dist/cjs.js??ref--5-1!./node_modules/postcss-loader/src??ref--5-2!./app/javascript/src/authentication.css 6 KiB {authentication} [built]
+    + 8 hidden modules
+
+ERROR in ./app/javascript/src/application.css (./node_modules/css-loader/dist/cjs.js??ref--5-1!./node_modules/postcss-loader/src??ref--5-2!./app/javascript/src/application.css)
+Module build failed (from ./node_modules/postcss-loader/src/index.js):
+Error: Failed to find 'trix/dist/trix'
+  in [
+    /home/mattstudy/matgram/app/javascript/src
+  ]
+    at /home/mattstudy/matgram/node_modules/postcss-import/lib/resolve-id.js:35:13
+    at async Promise.all (index 0)
+ @ ./app/javascript/src/application.css 2:26-171
+ @ ./app/javascript/packs/application.js
+
+  Rendered layouts/_user_actions_modal.html.erb (Duration: 0.1ms | Allocations: 121)
+  Rendered layout layouts/application.html.erb (Duration: 1321.8ms | Allocations: 7127)
+Completed 200 OK in 1331ms (Views: 1321.1ms | ActiveRecord: 3.9ms | Allocations: 9369)
+
+
+Started GET "/posts/new" for ::1 at 2022-09-29 20:14:00 -0300
+Processing by PostsController#new as HTML
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 3.5ms | Allocations: 3046)
+  Rendered posts/new.html.erb within layouts/application (Duration: 3.9ms | Allocations: 3355)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_user_actions_modal.html.erb (Duration: 0.1ms | Allocations: 123)
+  Rendered layout layouts/application.html.erb (Duration: 5.9ms | Allocations: 6072)
+Completed 200 OK in 18ms (Views: 6.2ms | ActiveRecord: 1.7ms | Allocations: 7888)
+
+
+Started GET "/posts/4" for ::1 at 2022-09-29 20:14:02 -0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPost Load (1.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:28:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_post.html.erb:4
+  Rendered posts/_post.html.erb (Duration: 5.3ms | Allocations: 1586)
+  Rendered posts/show.html.erb within layouts/application (Duration: 7.4ms | Allocations: 3204)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_user_actions_modal.html.erb (Duration: 0.1ms | Allocations: 121)
+  Rendered layout layouts/application.html.erb (Duration: 10.9ms | Allocations: 5831)
+Completed 200 OK in 20ms (Views: 10.1ms | ActiveRecord: 3.8ms | Allocations: 8074)
+
+
+Started GET "/posts/4" for ::1 at 2022-09-29 20:14:04 -0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPost Load (1.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:28:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_post.html.erb:4
+  Rendered posts/_post.html.erb (Duration: 8.4ms | Allocations: 1580)
+  Rendered posts/show.html.erb within layouts/application (Duration: 11.6ms | Allocations: 3188)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_user_actions_modal.html.erb (Duration: 0.1ms | Allocations: 121)
+  Rendered layout layouts/application.html.erb (Duration: 16.6ms | Allocations: 5811)
+Completed 200 OK in 29ms (Views: 15.4ms | ActiveRecord: 4.8ms | Allocations: 8031)
+
+
+Started GET "/edit_profile" for ::1 at 2022-09-29 20:14:07 -0300
+Processing by UsersController#edit as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (Duration: 2.4ms | Allocations: 872)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_user_actions_modal.html.erb (Duration: 0.5ms | Allocations: 124)
+  Rendered layout layouts/application.html.erb (Duration: 7.4ms | Allocations: 3643)
+Completed 200 OK in 15ms (Views: 10.1ms | ActiveRecord: 0.6ms | Allocations: 6043)
+
+
+Started GET "/posts/4" for ::1 at 2022-09-29 20:14:13 -0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:28:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_post.html.erb:4
+  Rendered posts/_post.html.erb (Duration: 3.3ms | Allocations: 1590)
+  Rendered posts/show.html.erb within layouts/application (Duration: 4.9ms | Allocations: 3208)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_user_actions_modal.html.erb (Duration: 0.2ms | Allocations: 123)
+  Rendered layout layouts/application.html.erb (Duration: 9.1ms | Allocations: 5839)
+Completed 200 OK in 13ms (Views: 8.5ms | ActiveRecord: 2.3ms | Allocations: 8061)
+
+
+Started GET "/posts/4" for ::1 at 2022-09-29 20:15:02 -0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:28:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_post.html.erb:4
+  Rendered posts/_post.html.erb (Duration: 2.1ms | Allocations: 1577)
+  Rendered posts/show.html.erb within layouts/application (Duration: 2.8ms | Allocations: 3185)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/mattstudy/matgram/public/packs
+[Webpacker] Hash: 60cbec13174ce66aa080
+Version: webpack 4.46.0
+Time: 588ms
+Built at: 09/29/2022 8:15:03 PM
+                                        Asset      Size          Chunks                         Chunk Names
+       js/application-c8308a079cced306dd95.js   146 KiB     application  [emitted] [immutable]  application
+   js/application-c8308a079cced306dd95.js.map   156 KiB     application  [emitted] [dev]        application
+    js/authentication-49d31312f0ec28351937.js  39.5 KiB  authentication  [emitted] [immutable]  authentication
+js/authentication-49d31312f0ec28351937.js.map  39.8 KiB  authentication  [emitted] [dev]        authentication
+     js/flashMessages-754b9186e7eb9ef59007.js  20.9 KiB   flashMessages  [emitted] [immutable]  flashMessages
+ js/flashMessages-754b9186e7eb9ef59007.js.map    21 KiB   flashMessages  [emitted] [dev]        flashMessages
+             js/modal-efedf721e216d3496540.js  38.3 KiB           modal  [emitted] [immutable]  modal
+         js/modal-efedf721e216d3496540.js.map    39 KiB           modal  [emitted] [dev]        modal
+                                manifest.json  1.34 KiB                  [emitted]              
+Entrypoint application = js/application-c8308a079cced306dd95.js js/application-c8308a079cced306dd95.js.map
+Entrypoint authentication = js/authentication-49d31312f0ec28351937.js js/authentication-49d31312f0ec28351937.js.map
+Entrypoint flashMessages = js/flashMessages-754b9186e7eb9ef59007.js js/flashMessages-754b9186e7eb9ef59007.js.map
+Entrypoint modal = js/modal-efedf721e216d3496540.js js/modal-efedf721e216d3496540.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 512 bytes {application} [built]
+[./app/javascript/packs/authentication.js] 61 bytes {authentication} [built]
+[./app/javascript/packs/flashMessages.js] 2.08 KiB {flashMessages} {application} {authentication} [built]
+[./app/javascript/packs/modal.js] 588 bytes {modal} {application} [built]
+[./app/javascript/src/application.css] 607 bytes {application} [built]
+[./app/javascript/src/authentication.css] 610 bytes {authentication} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./app/javascript/src/application.css] ./node_modules/css-loader/dist/cjs.js??ref--5-1!./node_modules/postcss-loader/src??ref--5-2!./app/javascript/src/application.css 22.4 KiB {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./app/javascript/src/authentication.css] ./node_modules/css-loader/dist/cjs.js??ref--5-1!./node_modules/postcss-loader/src??ref--5-2!./app/javascript/src/authentication.css 6 KiB {authentication} [built]
+    + 8 hidden modules
+
+  Rendered layouts/_user_actions_modal.html.erb (Duration: 0.1ms | Allocations: 121)
+  Rendered layout layouts/application.html.erb (Duration: 1197.3ms | Allocations: 7181)
+Completed 200 OK in 1202ms (Views: 1197.1ms | ActiveRecord: 1.3ms | Allocations: 9402)
+
+
+Started POST "/posts/4" for ::1 at 2022-09-29 20:15:09 -0300
+  
+ActionController::RoutingError (No route matches [POST] "/posts/4"):
+  
+Started GET "/posts/4" for ::1 at 2022-09-29 20:15:11 -0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPost Load (1.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:28:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_post.html.erb:4
+  Rendered posts/_post.html.erb (Duration: 5.5ms | Allocations: 1751)
+  Rendered posts/show.html.erb within layouts/application (Duration: 7.5ms | Allocations: 3418)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_user_actions_modal.html.erb (Duration: 0.1ms | Allocations: 125)
+  Rendered layout layouts/application.html.erb (Duration: 10.5ms | Allocations: 6084)
+Completed 200 OK in 20ms (Views: 9.5ms | ActiveRecord: 4.1ms | Allocations: 8537)
+
+
+Started GET "/posts/4" for ::1 at 2022-09-29 20:15:48 -0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:28:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_post.html.erb:4
+  Rendered posts/_post.html.erb (Duration: 1.9ms | Allocations: 1578)
+  Rendered posts/show.html.erb within layouts/application (Duration: 2.6ms | Allocations: 3187)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_user_actions_modal.html.erb (Duration: 0.1ms | Allocations: 121)
+  Rendered layout layouts/application.html.erb (Duration: 4.5ms | Allocations: 5810)
+Completed 200 OK in 8ms (Views: 4.2ms | ActiveRecord: 1.4ms | Allocations: 8031)
+
+
+Started GET "/" for ::1 at 2022-09-29 20:15:53 -0300
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:3
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:4
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_post.html.erb:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_post.html.erb:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_post.html.erb:4
+  Rendered collection of posts/_post.html.erb [3 times] (Duration: 3.7ms | Allocations: 3888)
+  Rendered posts/index.html.erb within layouts/application (Duration: 6.2ms | Allocations: 5776)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_user_actions_modal.html.erb (Duration: 0.1ms | Allocations: 124)
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 8498)
+Completed 200 OK in 11ms (Views: 6.7ms | ActiveRecord: 2.0ms | Allocations: 10300)
+
+
+Started GET "/posts/new" for ::1 at 2022-09-29 20:15:56 -0300
+Processing by PostsController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 0.8ms | Allocations: 589)
+  Rendered posts/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 677)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_user_actions_modal.html.erb (Duration: 0.1ms | Allocations: 121)
+  Rendered layout layouts/application.html.erb (Duration: 4.3ms | Allocations: 3480)
+Completed 200 OK in 7ms (Views: 4.5ms | ActiveRecord: 0.6ms | Allocations: 5148)
+
+
+Started GET "/edit_profile" for ::1 at 2022-09-29 20:15:59 -0300
+Processing by UsersController#edit as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (Duration: 0.7ms | Allocations: 620)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_user_actions_modal.html.erb (Duration: 0.1ms | Allocations: 124)
+  Rendered layout layouts/application.html.erb (Duration: 3.0ms | Allocations: 3433)
+Completed 200 OK in 6ms (Views: 3.3ms | ActiveRecord: 0.5ms | Allocations: 5078)
+
+
+Started GET "/" for ::1 at 2022-09-29 20:16:01 -0300
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Exists? (1.2ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:3
+  [1m[36mPost Load (1.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:4
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_post.html.erb:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_post.html.erb:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_post.html.erb:4
+  Rendered collection of posts/_post.html.erb [3 times] (Duration: 7.6ms | Allocations: 3542)
+  Rendered posts/index.html.erb within layouts/application (Duration: 12.4ms | Allocations: 5061)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_user_actions_modal.html.erb (Duration: 0.1ms | Allocations: 122)
+  Rendered layout layouts/application.html.erb (Duration: 15.0ms | Allocations: 7776)
+Completed 200 OK in 21ms (Views: 11.4ms | ActiveRecord: 5.4ms | Allocations: 9450)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2022-09-29 20:16:39 -0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.4ms | Allocations: 2835)
+
+
+Started GET "/" for ::1 at 2022-09-29 20:16:39 -0300
+Processing by PostsController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 237)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-09-29 20:16:39 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/authentication.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/authentication
+  Rendered devise/shared/_links.html.erb (Duration: 0.5ms | Allocations: 619)
+  Rendered devise/sessions/new.html.erb within layouts/authentication (Duration: 1.7ms | Allocations: 1666)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/authentication.html.erb (Duration: 4.2ms | Allocations: 4404)
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.0ms | Allocations: 5319)
+
+
+Started POST "/users/sign_in" for ::1 at 2022-09-29 20:16:47 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"matias_arenhard@hotmail.com", "password"=>"[FILTERED]"}, "commit"=>"Entrar"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "matias_arenhard@hotmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 173ms (ActiveRecord: 0.6ms | Allocations: 4334)
+
+
+Started GET "/" for ::1 at 2022-09-29 20:16:48 -0300
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:3
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:4
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_post.html.erb:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_post.html.erb:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_post.html.erb:4
+  Rendered collection of posts/_post.html.erb [3 times] (Duration: 3.5ms | Allocations: 3552)
+  Rendered posts/index.html.erb within layouts/application (Duration: 5.7ms | Allocations: 5070)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_user_actions_modal.html.erb (Duration: 0.1ms | Allocations: 124)
+  Rendered layout layouts/application.html.erb (Duration: 7.8ms | Allocations: 7797)
+Completed 200 OK in 10ms (Views: 6.4ms | ActiveRecord: 2.1ms | Allocations: 9478)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2022-09-29 20:19:40 -0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms (ActiveRecord: 0.5ms | Allocations: 1889)
+
+
+Started GET "/" for ::1 at 2022-09-29 20:19:40 -0300
+Processing by PostsController#index as HTML
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms | Allocations: 221)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-09-29 20:19:40 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/authentication.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/authentication
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 167)
+  Rendered devise/sessions/new.html.erb within layouts/authentication (Duration: 0.7ms | Allocations: 729)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/authentication.html.erb (Duration: 2.6ms | Allocations: 3258)
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.0ms | Allocations: 3797)
+
+
+Started POST "/users/sign_in" for ::1 at 2022-09-29 20:19:53 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"matias_arenhard@hotmail.com", "password"=>"[FILTERED]"}, "commit"=>"Entrar"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "matias_arenhard@hotmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 169ms (ActiveRecord: 0.8ms | Allocations: 2459)
+
+
+Started GET "/" for ::1 at 2022-09-29 20:19:53 -0300
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:3
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:4
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_post.html.erb:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_post.html.erb:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_post.html.erb:4
+  Rendered collection of posts/_post.html.erb [3 times] (Duration: 3.4ms | Allocations: 3540)
+  Rendered posts/index.html.erb within layouts/application (Duration: 5.2ms | Allocations: 5058)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_user_actions_modal.html.erb (Duration: 0.1ms | Allocations: 122)
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | Allocations: 7778)
+Completed 200 OK in 9ms (Views: 5.8ms | ActiveRecord: 1.7ms | Allocations: 9458)
+
+
+Started GET "/edit_profile" for ::1 at 2022-09-29 20:20:29 -0300
+Processing by UsersController#edit as HTML
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (Duration: 1.7ms | Allocations: 615)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_user_actions_modal.html.erb (Duration: 0.2ms | Allocations: 124)
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | Allocations: 3425)
+Completed 200 OK in 13ms (Views: 6.9ms | ActiveRecord: 1.5ms | Allocations: 5070)
+
+
+Started PATCH "/profile" for ::1 at 2022-09-29 20:23:09 -0300
+Processing by UsersController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"matias"}, "commit"=>"Atualizar Usuário"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:16:in `update'
+  [1m[36mUser Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["username", "matias,arenhard"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:16:in `update'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:16:in `update'
+Redirected to http://localhost:3000/
+Completed 302 Found in 7ms (ActiveRecord: 2.3ms | Allocations: 4332)
+
+
+Started GET "/" for ::1 at 2022-09-29 20:23:09 -0300
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:3
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:4
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_post.html.erb:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_post.html.erb:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_post.html.erb:4
+  Rendered collection of posts/_post.html.erb [3 times] (Duration: 3.4ms | Allocations: 3545)
+  Rendered posts/index.html.erb within layouts/application (Duration: 5.4ms | Allocations: 5063)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_user_actions_modal.html.erb (Duration: 0.1ms | Allocations: 122)
+  Rendered layout layouts/application.html.erb (Duration: 7.4ms | Allocations: 7781)
+Completed 200 OK in 10ms (Views: 6.2ms | ActiveRecord: 1.8ms | Allocations: 9466)
+
+
+Started GET "/edit_profile" for ::1 at 2022-09-29 20:23:12 -0300
+Processing by UsersController#edit as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (Duration: 0.8ms | Allocations: 607)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_user_actions_modal.html.erb (Duration: 0.1ms | Allocations: 122)
+  Rendered layout layouts/application.html.erb (Duration: 3.0ms | Allocations: 3411)
+Completed 200 OK in 6ms (Views: 3.2ms | ActiveRecord: 0.5ms | Allocations: 5056)
+
+
+Started PATCH "/profile" for ::1 at 2022-09-29 20:23:23 -0300
+Processing by UsersController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"avatar"=>#<ActionDispatch::Http::UploadedFile:0x000055641f4c6458 @tempfile=#<Tempfile:/tmp/RackMultipart20220929-9438-63q3nh.jpeg>, @original_filename="tengen.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"user[avatar]\"; filename=\"tengen.jpeg\"\r\nContent-Type: image/jpeg\r\n">, "name"=>"matias"}, "commit"=>"Atualizar Usuário"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.4ms | Allocations: 2126)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'avatar' for User.):
+  
+app/controllers/users_controller.rb:16:in `update'
+Started GET "/edit_profile" for ::1 at 2022-09-29 20:23:26 -0300
+Processing by UsersController#edit as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (Duration: 1.8ms | Allocations: 607)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_user_actions_modal.html.erb (Duration: 0.2ms | Allocations: 122)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 3416)
+Completed 200 OK in 14ms (Views: 7.9ms | ActiveRecord: 1.3ms | Allocations: 5063)
+
+
+Started PATCH "/profile" for ::1 at 2022-09-29 20:24:40 -0300
+Processing by UsersController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"avatar"=>#<ActionDispatch::Http::UploadedFile:0x00007f4bac3775e0 @tempfile=#<Tempfile:/tmp/RackMultipart20220929-9438-j5akse.jpeg>, @original_filename="tengen.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"user[avatar]\"; filename=\"tengen.jpeg\"\r\nContent-Type: image/jpeg\r\n">, "name"=>""}, "commit"=>"Atualizar Usuário"}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 1.5ms | Allocations: 2079)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'avatar' for User.):
+  
+app/controllers/users_controller.rb:16:in `update'
+Started GET "/edit_profile" for ::1 at 2022-09-29 20:24:44 -0300
+Processing by UsersController#edit as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (Duration: 0.8ms | Allocations: 607)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_user_actions_modal.html.erb (Duration: 0.1ms | Allocations: 122)
+  Rendered layout layouts/application.html.erb (Duration: 2.9ms | Allocations: 3416)
+Completed 200 OK in 7ms (Views: 3.2ms | ActiveRecord: 0.4ms | Allocations: 5063)
+
+

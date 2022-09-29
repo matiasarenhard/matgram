@@ -1,15 +1,15 @@
 {
-  "application.js": "/packs/js/application-19b21b7e667e0370f711.js",
-  "application.js.map": "/packs/js/application-19b21b7e667e0370f711.js.map",
+  "application.js": "/packs/js/application-c8308a079cced306dd95.js",
+  "application.js.map": "/packs/js/application-c8308a079cced306dd95.js.map",
   "authentication.js": "/packs/js/authentication-49d31312f0ec28351937.js",
   "authentication.js.map": "/packs/js/authentication-49d31312f0ec28351937.js.map",
   "entrypoints": {
     "application": {
       "js": [
-        "/packs/js/application-19b21b7e667e0370f711.js"
+        "/packs/js/application-c8308a079cced306dd95.js"
       ],
       "js.map": [
-        "/packs/js/application-19b21b7e667e0370f711.js.map"
+        "/packs/js/application-c8308a079cced306dd95.js.map"
       ]
     },
     "authentication": {
@@ -27,8 +27,18 @@
       "js.map": [
         "/packs/js/flashMessages-754b9186e7eb9ef59007.js.map"
       ]
+    },
+    "modal": {
+      "js": [
+        "/packs/js/modal-efedf721e216d3496540.js"
+      ],
+      "js.map": [
+        "/packs/js/modal-efedf721e216d3496540.js.map"
+      ]
     }
   },
   "flashMessages.js": "/packs/js/flashMessages-754b9186e7eb9ef59007.js",
-  "flashMessages.js.map": "/packs/js/flashMessages-754b9186e7eb9ef59007.js.map"
+  "flashMessages.js.map": "/packs/js/flashMessages-754b9186e7eb9ef59007.js.map",
+  "modal.js": "/packs/js/modal-efedf721e216d3496540.js",
+  "modal.js.map": "/packs/js/modal-efedf721e216d3496540.js.map"
 }
