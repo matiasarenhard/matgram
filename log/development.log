@@ -2176,3 +2176,87 @@ Processing by UsersController#edit as HTML
 Completed 200 OK in 7ms (Views: 3.2ms | ActiveRecord: 0.4ms | Allocations: 5063)
 
 
+Started DELETE "/users/sign_out" for ::1 at 2022-09-29 20:32:07 -0300
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 53ms (ActiveRecord: 3.5ms | Allocations: 137010)
+
+
+Started GET "/" for ::1 at 2022-09-29 20:32:07 -0300
+Processing by PostsController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 306)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-09-29 20:32:07 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/authentication.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/authentication
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 623)
+  Rendered devise/sessions/new.html.erb within layouts/authentication (Duration: 1.9ms | Allocations: 1930)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/authentication.html.erb (Duration: 6.2ms | Allocations: 7994)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.0ms | Allocations: 9668)
+
+
+Started GET "/users/password/new" for ::1 at 2022-09-29 20:32:10 -0300
+Processing by Devise::PasswordsController#new as HTML
+  Rendering layout layouts/authentication.html.erb
+  Rendering devise/passwords/new.html.erb within layouts/authentication
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.3ms | Allocations: 216)
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 199)
+  Rendered devise/passwords/new.html.erb within layouts/authentication (Duration: 2.0ms | Allocations: 1294)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/authentication.html.erb (Duration: 4.1ms | Allocations: 3763)
+Completed 200 OK in 7ms (Views: 5.2ms | ActiveRecord: 0.0ms | Allocations: 4567)
+
+
+Started POST "/users/password" for ::1 at 2022-09-29 20:32:15 -0300
+Processing by Devise::PasswordsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"matias_arenhard@hotmail.com"}, "commit"=>"Me envie instruções para redefinir a senha"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "matias_arenhard@hotmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."reset_password_token" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["reset_password_token", "14ff2f19c10235d695ebaa16b290efd8914bf0a89342dbc4df87fa253f5b2475"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Update (0.6ms)[0m  [1m[33mUPDATE "users" SET "reset_password_token" = $1, "reset_password_sent_at" = $2, "updated_at" = $3 WHERE "users"."id" = $4[0m  [["reset_password_token", "14ff2f19c10235d695ebaa16b290efd8914bf0a89342dbc4df87fa253f5b2475"], ["reset_password_sent_at", "2022-09-29 23:32:15.290618"], ["updated_at", "2022-09-29 23:32:15.290778"], ["id", 1]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  Rendering devise/mailer/reset_password_instructions.html.erb
+  Rendered devise/mailer/reset_password_instructions.html.erb (Duration: 0.5ms | Allocations: 269)
+Devise::Mailer#reset_password_instructions: processed outbound mail in 3.1ms
+Delivered mail 63362aff53256_2e664a4c662b@matias-note.mail (12.6ms)
+Date: Thu, 29 Sep 2022 20:32:15 -0300
+From: noreply@matgram-clone.com
+Reply-To: noreply@matgram-clone.com
+To: matias_arenhard@hotmail.com
+Message-ID: <63362aff53256_2e664a4c662b@matias-note.mail>
+Subject: =?UTF-8?Q?Instru=C3=A7=C3=B5es_de_redefini=C3=A7=C3=A3o_de_senha?=
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Hello matias_arenhard@hotmail.com!</p>
+
+<p>Someone has requested a link to change your password. You can do this through the link below.</p>
+
+<p><a href="http://localhost:3000/users/password/edit?reset_password_token=Rvg3oBWr9o6UYhisfYE_">Change my password</a></p>
+
+<p>If you didn't request this, please ignore this email.</p>
+<p>Your password won't change until you access the link above and create a new one.</p>
+
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 117ms (ActiveRecord: 4.0ms | Allocations: 55699)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-09-29 20:32:15 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/authentication.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/authentication
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 167)
+  Rendered devise/sessions/new.html.erb within layouts/authentication (Duration: 1.1ms | Allocations: 726)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/authentication.html.erb (Duration: 6.0ms | Allocations: 3257)
+Completed 200 OK in 8ms (Views: 6.4ms | ActiveRecord: 0.0ms | Allocations: 3799)
+
+
