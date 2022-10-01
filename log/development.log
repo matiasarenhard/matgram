@@ -3373,3 +3373,529 @@ Completed 200 OK in 0ms (ActiveRecord: 0.0ms | Allocations: 203)
 [ActiveJob] [ActiveStorage::AnalyzeJob] [c0ff9a78-6438-43ac-b8d0-c588eae5d6b9]   [1m[36mActiveStorage::Blob Update (0.3ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "metadata" = $1 WHERE "active_storage_blobs"."id" = $2[0m  [["metadata", "{\"identified\":true,\"width\":100,\"height\":100,\"analyzed\":true}"], ["id", 5]]
 [ActiveJob] [ActiveStorage::AnalyzeJob] [c0ff9a78-6438-43ac-b8d0-c588eae5d6b9]   [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
 [ActiveJob] [ActiveStorage::AnalyzeJob] [c0ff9a78-6438-43ac-b8d0-c588eae5d6b9] Performed ActiveStorage::AnalyzeJob (Job ID: c0ff9a78-6438-43ac-b8d0-c588eae5d6b9) from Async(default) in 15.85ms
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2699561720942175810)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateLikes (20221001215239)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (7.6ms)[0m  [1m[35mCREATE TABLE "likes" ("id" bigserial primary key, "post_id" bigint NOT NULL, "user_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_87a8aac469"
+FOREIGN KEY ("post_id")
+  REFERENCES "posts" ("id")
+, CONSTRAINT "fk_rails_1e09b5dabf"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  [1m[35m (2.4ms)[0m  [1m[35mCREATE INDEX "index_likes_on_post_id" ON "likes" ("post_id")[0m
+  [1m[35m (2.1ms)[0m  [1m[35mCREATE INDEX "index_likes_on_user_id" ON "likes" ("user_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20221001215239"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(2699561720942175810)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2022-10-01 19:03:35 -0300
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:3
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/views/posts/index.html.erb:4
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_post.html.erb:4
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "avatar"], ["LIMIT", 1]]
+  ↳ app/helpers/application_helper.rb:7:in `user_avatar'
+  [1m[36mActiveStorage::Blob Load (0.6ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/helpers/application_helper.rb:8:in `user_avatar'
+  [1m[36mActiveStorage::Attachment Load (0.9ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 7], ["record_type", "Post"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/posts/_post.html.erb:16
+  [1m[36mActiveStorage::Blob Load (0.7ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/posts/_post.html.erb:16
+  [1m[36mLike Load (0.7ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."post_id" = $1 AND "likes"."user_id" = $2 LIMIT $3[0m  [["post_id", 7], ["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/likes/_like.html.erb:2
+  [1m[36mLike Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "likes" WHERE "likes"."post_id" = $1 AND "likes"."user_id" = $2 LIMIT $3[0m  [["post_id", 7], ["user_id", 1], ["LIMIT", 1]]
+  ↳ app/models/post.rb:15:in `liked_by?'
+  [1m[36mCACHE Like Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "likes" WHERE "likes"."post_id" = $1 AND "likes"."user_id" = $2 LIMIT $3[0m  [["post_id", 7], ["user_id", 1], ["LIMIT", 1]]
+  ↳ app/models/post.rb:15:in `liked_by?'
+  Rendered likes/_like.html.erb (Duration: 8.0ms | Allocations: 5800)
+  Rendered collection of posts/_post.html.erb [1 times] (Duration: 92.8ms | Allocations: 158887)
+  Rendered posts/index.html.erb within layouts/application (Duration: 97.8ms | Allocations: 162946)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_user_actions_modal.html.erb (Duration: 0.7ms | Allocations: 249)
+  Rendered layout layouts/application.html.erb (Duration: 112.1ms | Allocations: 169592)
+Completed 200 OK in 127ms (Views: 100.1ms | ActiveRecord: 17.1ms | Allocations: 182724)
+
+
+Started GET "/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--8957e2548e7f4416792e1b1e918318358b82892a/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lKYW5CbFp3WTZCa1ZVT2hOeVpYTnBlbVZmZEc5ZlptbHNiRnNIYVdscGFRPT0iLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--a67b0b1057d2f27737b8fca4b87cc7b7d3e97812/tengen.jpeg" for ::1 at 2022-10-01 19:03:35 -0300
+Started GET "/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--e829ed91e1c02ffb90cd188d060a26871f696c4f/perfil11.png" for ::1 at 2022-10-01 19:03:35 -0300
+Processing by ActiveStorage::Representations::RedirectController#show as JPEG
+  Parameters: {"signed_blob_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--8957e2548e7f4416792e1b1e918318358b82892a", "variation_key"=>"[FILTERED]", "filename"=>"tengen"}
+Processing by ActiveStorage::Blobs::RedirectController#show as PNG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--e829ed91e1c02ffb90cd188d060a26871f696c4f", "filename"=>"perfil11"}
+  [1m[36mActiveStorage::Blob Load (2.4ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mActiveStorage::VariantRecord Load (0.5ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = $1 AND "active_storage_variant_records"."variation_digest" = $2 LIMIT $3[0m  [["blob_id", 4], ["variation_digest", "zb4vCT5wC8085pi3RzGKpLqHkaA="], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "ActiveStorage::VariantRecord"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Load (0.6ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+[36m  Disk Storage (0.5ms) [0m[34mGenerated URL for file at key: cvcu2vn1lyql4wpagjehq6k0van3 (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhZM1pqZFRKMmJqRnNlWEZzTkhkd1lXZHFaV2h4Tm1zd2RtRnVNd1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUVdsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5SbGJtZGxiaTVxY0dWbklqc2dabWxzWlc1aGJXVXFQVlZVUmkwNEp5ZDBaVzVuWlc0dWFuQmxad1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRDJsdFlXZGxMMnB3WldjR093WlVPaEZ6WlhKMmFXTmxYMjVoYldVNkNteHZZMkZzIiwiZXhwIjoiMjAyMi0xMC0wMVQyMjowODozNi4wMjJaIiwicHVyIjoiYmxvYl9rZXkifX0=--aa687d5146ac249d45bf6fbd73480dca43eb5919/tengen.jpeg)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhZM1pqZFRKMmJqRnNlWEZzTkhkd1lXZHFaV2h4Tm1zd2RtRnVNd1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUVdsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5SbGJtZGxiaTVxY0dWbklqc2dabWxzWlc1aGJXVXFQVlZVUmkwNEp5ZDBaVzVuWlc0dWFuQmxad1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRDJsdFlXZGxMMnB3WldjR093WlVPaEZ6WlhKMmFXTmxYMjVoYldVNkNteHZZMkZzIiwiZXhwIjoiMjAyMi0xMC0wMVQyMjowODozNi4wMjJaIiwicHVyIjoiYmxvYl9rZXkifX0=--aa687d5146ac249d45bf6fbd73480dca43eb5919/tengen.jpeg
+Completed 302 Found in 28ms (ActiveRecord: 6.5ms | Allocations: 13108)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhZM1pqZFRKMmJqRnNlWEZzTkhkd1lXZHFaV2h4Tm1zd2RtRnVNd1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUVdsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5SbGJtZGxiaTVxY0dWbklqc2dabWxzWlc1aGJXVXFQVlZVUmkwNEp5ZDBaVzVuWlc0dWFuQmxad1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRDJsdFlXZGxMMnB3WldjR093WlVPaEZ6WlhKMmFXTmxYMjVoYldVNkNteHZZMkZzIiwiZXhwIjoiMjAyMi0xMC0wMVQyMjowODozNi4wMjJaIiwicHVyIjoiYmxvYl9rZXkifX0=--aa687d5146ac249d45bf6fbd73480dca43eb5919/tengen.jpeg" for ::1 at 2022-10-01 19:03:36 -0300
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"tengen"}
+Completed 200 OK in 0ms (ActiveRecord: 0.0ms | Allocations: 222)
+
+
+  [1m[36mActiveStorage::Blob Load (0.6ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[36m  Disk Storage (0.3ms) [0m[34mGenerated URL for file at key: 8cpjvawjyf9h65tjhvcp4rvd707b (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhPR053YW5aaGQycDVaamxvTmpWMGFtaDJZM0EwY25aa056QTNZZ1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5CbGNtWnBiREV4TG5CdVp5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25jR1Z5Wm1sc01URXVjRzVuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJT2FXMWhaMlV2Y0c1bkJqc0dWRG9SYzJWeWRtbGpaVjl1WVcxbE9ncHNiMk5oYkE9PSIsImV4cCI6IjIwMjItMTAtMDFUMjI6MDg6MzYuMDMwWiIsInB1ciI6ImJsb2Jfa2V5In19--069ce344fbf6f0ba3ee789a4227a410b104469ef/perfil11.png)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhPR053YW5aaGQycDVaamxvTmpWMGFtaDJZM0EwY25aa056QTNZZ1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5CbGNtWnBiREV4TG5CdVp5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25jR1Z5Wm1sc01URXVjRzVuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJT2FXMWhaMlV2Y0c1bkJqc0dWRG9SYzJWeWRtbGpaVjl1WVcxbE9ncHNiMk5oYkE9PSIsImV4cCI6IjIwMjItMTAtMDFUMjI6MDg6MzYuMDMwWiIsInB1ciI6ImJsb2Jfa2V5In19--069ce344fbf6f0ba3ee789a4227a410b104469ef/perfil11.png
+Completed 302 Found in 32ms (ActiveRecord: 9.9ms | Allocations: 17391)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhPR053YW5aaGQycDVaamxvTmpWMGFtaDJZM0EwY25aa056QTNZZ1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5CbGNtWnBiREV4TG5CdVp5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25jR1Z5Wm1sc01URXVjRzVuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJT2FXMWhaMlV2Y0c1bkJqc0dWRG9SYzJWeWRtbGpaVjl1WVcxbE9ncHNiMk5oYkE9PSIsImV4cCI6IjIwMjItMTAtMDFUMjI6MDg6MzYuMDMwWiIsInB1ciI6ImJsb2Jfa2V5In19--069ce344fbf6f0ba3ee789a4227a410b104469ef/perfil11.png" for ::1 at 2022-10-01 19:03:36 -0300
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"perfil11"}
+Completed 200 OK in 0ms (ActiveRecord: 0.0ms | Allocations: 175)
+
+
+Started GET "/" for ::1 at 2022-10-01 19:03:39 -0300
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Exists? (2.0ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:3
+  [1m[36mPost Load (2.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/views/posts/index.html.erb:4
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_post.html.erb:4
+  [1m[36mActiveStorage::Attachment Load (1.9ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "avatar"], ["LIMIT", 1]]
+  ↳ app/helpers/application_helper.rb:7:in `user_avatar'
+  [1m[36mActiveStorage::Blob Load (1.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/helpers/application_helper.rb:8:in `user_avatar'
+  [1m[36mActiveStorage::Attachment Load (1.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 7], ["record_type", "Post"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/posts/_post.html.erb:16
+  [1m[36mActiveStorage::Blob Load (0.8ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/posts/_post.html.erb:16
+  [1m[36mLike Load (0.5ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."post_id" = $1 AND "likes"."user_id" = $2 LIMIT $3[0m  [["post_id", 7], ["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/likes/_like.html.erb:2
+  [1m[36mLike Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "likes" WHERE "likes"."post_id" = $1 AND "likes"."user_id" = $2 LIMIT $3[0m  [["post_id", 7], ["user_id", 1], ["LIMIT", 1]]
+  ↳ app/models/post.rb:15:in `liked_by?'
+  [1m[36mCACHE Like Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "likes" WHERE "likes"."post_id" = $1 AND "likes"."user_id" = $2 LIMIT $3[0m  [["post_id", 7], ["user_id", 1], ["LIMIT", 1]]
+  ↳ app/models/post.rb:15:in `liked_by?'
+  Rendered likes/_like.html.erb (Duration: 3.1ms | Allocations: 2542)
+  Rendered collection of posts/_post.html.erb [1 times] (Duration: 19.6ms | Allocations: 8035)
+  Rendered posts/index.html.erb within layouts/application (Duration: 26.8ms | Allocations: 9558)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_user_actions_modal.html.erb (Duration: 0.1ms | Allocations: 121)
+  Rendered layout layouts/application.html.erb (Duration: 28.9ms | Allocations: 12370)
+Completed 200 OK in 37ms (Views: 17.6ms | ActiveRecord: 13.5ms | Allocations: 14075)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhZM1pqZFRKMmJqRnNlWEZzTkhkd1lXZHFaV2h4Tm1zd2RtRnVNd1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUVdsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5SbGJtZGxiaTVxY0dWbklqc2dabWxzWlc1aGJXVXFQVlZVUmkwNEp5ZDBaVzVuWlc0dWFuQmxad1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRDJsdFlXZGxMMnB3WldjR093WlVPaEZ6WlhKMmFXTmxYMjVoYldVNkNteHZZMkZzIiwiZXhwIjoiMjAyMi0xMC0wMVQyMjowODozNi4wMjJaIiwicHVyIjoiYmxvYl9rZXkifX0=--aa687d5146ac249d45bf6fbd73480dca43eb5919/tengen.jpeg" for ::1 at 2022-10-01 19:03:39 -0300
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhPR053YW5aaGQycDVaamxvTmpWMGFtaDJZM0EwY25aa056QTNZZ1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5CbGNtWnBiREV4TG5CdVp5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25jR1Z5Wm1sc01URXVjRzVuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJT2FXMWhaMlV2Y0c1bkJqc0dWRG9SYzJWeWRtbGpaVjl1WVcxbE9ncHNiMk5oYkE9PSIsImV4cCI6IjIwMjItMTAtMDFUMjI6MDg6MzYuMDMwWiIsInB1ciI6ImJsb2Jfa2V5In19--069ce344fbf6f0ba3ee789a4227a410b104469ef/perfil11.png" for ::1 at 2022-10-01 19:03:39 -0300
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"perfil11"}
+Completed 200 OK in 0ms (ActiveRecord: 0.0ms | Allocations: 181)
+
+
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"tengen"}
+Completed 200 OK in 0ms (ActiveRecord: 0.0ms | Allocations: 189)
+
+
+Started GET "/" for ::1 at 2022-10-01 19:05:34 -0300
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Exists? (0.8ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:3
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/views/posts/index.html.erb:4
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_post.html.erb:4
+  [1m[36mActiveStorage::Attachment Load (1.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "avatar"], ["LIMIT", 1]]
+  ↳ app/helpers/application_helper.rb:7:in `user_avatar'
+  [1m[36mActiveStorage::Blob Load (0.9ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/helpers/application_helper.rb:8:in `user_avatar'
+  [1m[36mActiveStorage::Attachment Load (0.8ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 7], ["record_type", "Post"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/posts/_post.html.erb:16
+  [1m[36mActiveStorage::Blob Load (0.8ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/posts/_post.html.erb:16
+  [1m[36mLike Load (0.7ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."post_id" = $1 AND "likes"."user_id" = $2 LIMIT $3[0m  [["post_id", 7], ["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/likes/_like.html.erb:2
+  [1m[36mLike Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "likes" WHERE "likes"."post_id" = $1 AND "likes"."user_id" = $2 LIMIT $3[0m  [["post_id", 7], ["user_id", 1], ["LIMIT", 1]]
+  ↳ app/models/post.rb:15:in `liked_by?'
+  [1m[36mCACHE Like Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "likes" WHERE "likes"."post_id" = $1 AND "likes"."user_id" = $2 LIMIT $3[0m  [["post_id", 7], ["user_id", 1], ["LIMIT", 1]]
+  ↳ app/models/post.rb:15:in `liked_by?'
+  Rendered likes/_like.html.erb (Duration: 3.1ms | Allocations: 2537)
+  Rendered collection of posts/_post.html.erb [1 times] (Duration: 13.4ms | Allocations: 8012)
+  Rendered posts/index.html.erb within layouts/application (Duration: 15.7ms | Allocations: 9513)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/mattstudy/matgram/public/packs
+[Webpacker] Hash: d1cc85919d58689a019f
+Version: webpack 4.46.0
+Time: 984ms
+Built at: 10/01/2022 7:05:36 PM
+                                        Asset      Size          Chunks                         Chunk Names
+       js/application-07a46fb4cefec29e6dd5.js   149 KiB     application  [emitted] [immutable]  application
+   js/application-07a46fb4cefec29e6dd5.js.map   157 KiB     application  [emitted] [dev]        application
+    js/authentication-49d31312f0ec28351937.js  39.5 KiB  authentication  [emitted] [immutable]  authentication
+js/authentication-49d31312f0ec28351937.js.map  39.8 KiB  authentication  [emitted] [dev]        authentication
+     js/flashMessages-754b9186e7eb9ef59007.js  20.9 KiB   flashMessages  [emitted] [immutable]  flashMessages
+ js/flashMessages-754b9186e7eb9ef59007.js.map    21 KiB   flashMessages  [emitted] [dev]        flashMessages
+             js/likes-48695a7bbba4975f3dbd.js  6.69 KiB           likes  [emitted] [immutable]  likes
+         js/likes-48695a7bbba4975f3dbd.js.map  5.35 KiB           likes  [emitted] [dev]        likes
+             js/modal-efedf721e216d3496540.js  38.3 KiB           modal  [emitted] [immutable]  modal
+         js/modal-efedf721e216d3496540.js.map    39 KiB           modal  [emitted] [dev]        modal
+                                manifest.json  1.63 KiB                  [emitted]              
+Entrypoint application = js/application-07a46fb4cefec29e6dd5.js js/application-07a46fb4cefec29e6dd5.js.map
+Entrypoint authentication = js/authentication-49d31312f0ec28351937.js js/authentication-49d31312f0ec28351937.js.map
+Entrypoint flashMessages = js/flashMessages-754b9186e7eb9ef59007.js js/flashMessages-754b9186e7eb9ef59007.js.map
+Entrypoint likes = js/likes-48695a7bbba4975f3dbd.js js/likes-48695a7bbba4975f3dbd.js.map
+Entrypoint modal = js/modal-efedf721e216d3496540.js js/modal-efedf721e216d3496540.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 530 bytes {application} [built]
+[./app/javascript/packs/authentication.js] 61 bytes {authentication} [built]
+[./app/javascript/packs/flashMessages.js] 2.08 KiB {flashMessages} {application} {authentication} [built]
+[./app/javascript/packs/likes.js] 2.83 KiB {likes} {application} [built]
+[./app/javascript/packs/modal.js] 588 bytes {modal} {application} [built]
+[./app/javascript/src/application.css] 607 bytes {application} [built]
+[./app/javascript/src/authentication.css] 610 bytes {authentication} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./app/javascript/src/application.css] ./node_modules/css-loader/dist/cjs.js??ref--5-1!./node_modules/postcss-loader/src??ref--5-2!./app/javascript/src/application.css 22.4 KiB {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./app/javascript/src/authentication.css] ./node_modules/css-loader/dist/cjs.js??ref--5-1!./node_modules/postcss-loader/src??ref--5-2!./app/javascript/src/authentication.css 6 KiB {authentication} [built]
+    + 8 hidden modules
+
+  Rendered layouts/_user_actions_modal.html.erb (Duration: 0.1ms | Allocations: 121)
+  Rendered layout layouts/application.html.erb (Duration: 1922.3ms | Allocations: 13762)
+Completed 200 OK in 1927ms (Views: 1915.9ms | ActiveRecord: 7.7ms | Allocations: 15466)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhZM1pqZFRKMmJqRnNlWEZzTkhkd1lXZHFaV2h4Tm1zd2RtRnVNd1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUVdsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5SbGJtZGxiaTVxY0dWbklqc2dabWxzWlc1aGJXVXFQVlZVUmkwNEp5ZDBaVzVuWlc0dWFuQmxad1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRDJsdFlXZGxMMnB3WldjR093WlVPaEZ6WlhKMmFXTmxYMjVoYldVNkNteHZZMkZzIiwiZXhwIjoiMjAyMi0xMC0wMVQyMjowODozNi4wMjJaIiwicHVyIjoiYmxvYl9rZXkifX0=--aa687d5146ac249d45bf6fbd73480dca43eb5919/tengen.jpeg" for ::1 at 2022-10-01 19:05:36 -0300
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"tengen"}
+Completed 200 OK in 0ms (ActiveRecord: 0.0ms | Allocations: 177)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhPR053YW5aaGQycDVaamxvTmpWMGFtaDJZM0EwY25aa056QTNZZ1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5CbGNtWnBiREV4TG5CdVp5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25jR1Z5Wm1sc01URXVjRzVuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJT2FXMWhaMlV2Y0c1bkJqc0dWRG9SYzJWeWRtbGpaVjl1WVcxbE9ncHNiMk5oYkE9PSIsImV4cCI6IjIwMjItMTAtMDFUMjI6MDg6MzYuMDMwWiIsInB1ciI6ImJsb2Jfa2V5In19--069ce344fbf6f0ba3ee789a4227a410b104469ef/perfil11.png" for ::1 at 2022-10-01 19:05:36 -0300
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"perfil11"}
+Completed 200 OK in 0ms (ActiveRecord: 0.0ms | Allocations: 177)
+
+
+Started POST "/likes" for ::1 at 2022-10-01 19:05:38 -0300
+  
+ActionController::RoutingError (No route matches [POST] "/likes"):
+  
+Started GET "/" for ::1 at 2022-10-01 19:08:19 -0300
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:3
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/views/posts/index.html.erb:4
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_post.html.erb:4
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "avatar"], ["LIMIT", 1]]
+  ↳ app/helpers/application_helper.rb:7:in `user_avatar'
+  [1m[36mActiveStorage::Blob Load (0.7ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/helpers/application_helper.rb:8:in `user_avatar'
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 7], ["record_type", "Post"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/posts/_post.html.erb:16
+  [1m[36mActiveStorage::Blob Load (0.9ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/posts/_post.html.erb:16
+  [1m[36mLike Load (0.7ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."post_id" = $1 AND "likes"."user_id" = $2 LIMIT $3[0m  [["post_id", 7], ["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/likes/_like.html.erb:2
+  [1m[36mLike Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "likes" WHERE "likes"."post_id" = $1 AND "likes"."user_id" = $2 LIMIT $3[0m  [["post_id", 7], ["user_id", 1], ["LIMIT", 1]]
+  ↳ app/models/post.rb:15:in `liked_by?'
+  [1m[36mCACHE Like Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "likes" WHERE "likes"."post_id" = $1 AND "likes"."user_id" = $2 LIMIT $3[0m  [["post_id", 7], ["user_id", 1], ["LIMIT", 1]]
+  ↳ app/models/post.rb:15:in `liked_by?'
+  Rendered likes/_like.html.erb (Duration: 3.0ms | Allocations: 2546)
+  Rendered collection of posts/_post.html.erb [1 times] (Duration: 13.5ms | Allocations: 8139)
+  Rendered posts/index.html.erb within layouts/application (Duration: 16.2ms | Allocations: 9661)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_user_actions_modal.html.erb (Duration: 0.1ms | Allocations: 125)
+  Rendered layout layouts/application.html.erb (Duration: 18.5ms | Allocations: 12632)
+Completed 200 OK in 22ms (Views: 12.7ms | ActiveRecord: 6.6ms | Allocations: 14561)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhZM1pqZFRKMmJqRnNlWEZzTkhkd1lXZHFaV2h4Tm1zd2RtRnVNd1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUVdsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5SbGJtZGxiaTVxY0dWbklqc2dabWxzWlc1aGJXVXFQVlZVUmkwNEp5ZDBaVzVuWlc0dWFuQmxad1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRDJsdFlXZGxMMnB3WldjR093WlVPaEZ6WlhKMmFXTmxYMjVoYldVNkNteHZZMkZzIiwiZXhwIjoiMjAyMi0xMC0wMVQyMjowODozNi4wMjJaIiwicHVyIjoiYmxvYl9rZXkifX0=--aa687d5146ac249d45bf6fbd73480dca43eb5919/tengen.jpeg" for ::1 at 2022-10-01 19:08:19 -0300
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"tengen"}
+Completed 200 OK in 0ms (ActiveRecord: 0.0ms | Allocations: 186)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhPR053YW5aaGQycDVaamxvTmpWMGFtaDJZM0EwY25aa056QTNZZ1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5CbGNtWnBiREV4TG5CdVp5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25jR1Z5Wm1sc01URXVjRzVuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJT2FXMWhaMlV2Y0c1bkJqc0dWRG9SYzJWeWRtbGpaVjl1WVcxbE9ncHNiMk5oYkE9PSIsImV4cCI6IjIwMjItMTAtMDFUMjI6MDg6MzYuMDMwWiIsInB1ciI6ImJsb2Jfa2V5In19--069ce344fbf6f0ba3ee789a4227a410b104469ef/perfil11.png" for ::1 at 2022-10-01 19:08:19 -0300
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"perfil11"}
+Completed 200 OK in 0ms (ActiveRecord: 0.0ms | Allocations: 175)
+
+
+Started POST "/likes" for ::1 at 2022-10-01 19:08:20 -0300
+  
+ActionController::RoutingError (No route matches [POST] "/likes"):
+  
+Started GET "/" for ::1 at 2022-10-01 19:12:38 -0300
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:3
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/views/posts/index.html.erb:4
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_post.html.erb:4
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "avatar"], ["LIMIT", 1]]
+  ↳ app/helpers/application_helper.rb:7:in `user_avatar'
+  [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/helpers/application_helper.rb:8:in `user_avatar'
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 7], ["record_type", "Post"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/posts/_post.html.erb:16
+  [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/posts/_post.html.erb:16
+  [1m[36mLike Load (0.5ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."post_id" = $1 AND "likes"."user_id" = $2 LIMIT $3[0m  [["post_id", 7], ["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/likes/_like.html.erb:2
+  [1m[36mLike Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "likes" WHERE "likes"."post_id" = $1 AND "likes"."user_id" = $2 LIMIT $3[0m  [["post_id", 7], ["user_id", 1], ["LIMIT", 1]]
+  ↳ app/models/post.rb:15:in `liked_by?'
+  [1m[36mCACHE Like Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "likes" WHERE "likes"."post_id" = $1 AND "likes"."user_id" = $2 LIMIT $3[0m  [["post_id", 7], ["user_id", 1], ["LIMIT", 1]]
+  ↳ app/models/post.rb:15:in `liked_by?'
+  Rendered likes/_like.html.erb (Duration: 5.2ms | Allocations: 4899)
+  Rendered collection of posts/_post.html.erb [1 times] (Duration: 26.9ms | Allocations: 24943)
+  Rendered posts/index.html.erb within layouts/application (Duration: 32.0ms | Allocations: 28411)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_user_actions_modal.html.erb (Duration: 0.1ms | Allocations: 124)
+  Rendered layout layouts/application.html.erb (Duration: 34.1ms | Allocations: 31154)
+Completed 200 OK in 48ms (Views: 24.2ms | ActiveRecord: 15.4ms | Allocations: 40981)
+
+
+Started GET "/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--8957e2548e7f4416792e1b1e918318358b82892a/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lKYW5CbFp3WTZCa1ZVT2hOeVpYTnBlbVZmZEc5ZlptbHNiRnNIYVdscGFRPT0iLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--a67b0b1057d2f27737b8fca4b87cc7b7d3e97812/tengen.jpeg" for ::1 at 2022-10-01 19:12:38 -0300
+Processing by ActiveStorage::Representations::RedirectController#show as JPEG
+  Parameters: {"signed_blob_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--8957e2548e7f4416792e1b1e918318358b82892a", "variation_key"=>"[FILTERED]", "filename"=>"tengen"}
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mActiveStorage::VariantRecord Load (0.5ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = $1 AND "active_storage_variant_records"."variation_digest" = $2 LIMIT $3[0m  [["blob_id", 4], ["variation_digest", "zb4vCT5wC8085pi3RzGKpLqHkaA="], ["LIMIT", 1]]
+Started GET "/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--e829ed91e1c02ffb90cd188d060a26871f696c4f/perfil11.png" for ::1 at 2022-10-01 19:12:38 -0300
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "ActiveStorage::VariantRecord"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Load (0.8ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+[36m  Disk Storage (0.5ms) [0m[34mGenerated URL for file at key: cvcu2vn1lyql4wpagjehq6k0van3 (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhZM1pqZFRKMmJqRnNlWEZzTkhkd1lXZHFaV2h4Tm1zd2RtRnVNd1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUVdsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5SbGJtZGxiaTVxY0dWbklqc2dabWxzWlc1aGJXVXFQVlZVUmkwNEp5ZDBaVzVuWlc0dWFuQmxad1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRDJsdFlXZGxMMnB3WldjR093WlVPaEZ6WlhKMmFXTmxYMjVoYldVNkNteHZZMkZzIiwiZXhwIjoiMjAyMi0xMC0wMVQyMjoxNzozOC45MjdaIiwicHVyIjoiYmxvYl9rZXkifX0=--85096d5b24e2a7825173a464e12169708514c702/tengen.jpeg)[0m
+Processing by ActiveStorage::Blobs::RedirectController#show as PNG
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhZM1pqZFRKMmJqRnNlWEZzTkhkd1lXZHFaV2h4Tm1zd2RtRnVNd1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUVdsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5SbGJtZGxiaTVxY0dWbklqc2dabWxzWlc1aGJXVXFQVlZVUmkwNEp5ZDBaVzVuWlc0dWFuQmxad1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRDJsdFlXZGxMMnB3WldjR093WlVPaEZ6WlhKMmFXTmxYMjVoYldVNkNteHZZMkZzIiwiZXhwIjoiMjAyMi0xMC0wMVQyMjoxNzozOC45MjdaIiwicHVyIjoiYmxvYl9rZXkifX0=--85096d5b24e2a7825173a464e12169708514c702/tengen.jpeg
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--e829ed91e1c02ffb90cd188d060a26871f696c4f", "filename"=>"perfil11"}
+Completed 302 Found in 17ms (ActiveRecord: 4.9ms | Allocations: 12055)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhZM1pqZFRKMmJqRnNlWEZzTkhkd1lXZHFaV2h4Tm1zd2RtRnVNd1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUVdsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5SbGJtZGxiaTVxY0dWbklqc2dabWxzWlc1aGJXVXFQVlZVUmkwNEp5ZDBaVzVuWlc0dWFuQmxad1k3QmxRNkVXTnZiblJsYm5SZmRIbHdaVWtpRDJsdFlXZGxMMnB3WldjR093WlVPaEZ6WlhKMmFXTmxYMjVoYldVNkNteHZZMkZzIiwiZXhwIjoiMjAyMi0xMC0wMVQyMjoxNzozOC45MjdaIiwicHVyIjoiYmxvYl9rZXkifX0=--85096d5b24e2a7825173a464e12169708514c702/tengen.jpeg" for ::1 at 2022-10-01 19:12:38 -0300
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"tengen"}
+Completed 200 OK in 0ms (ActiveRecord: 0.0ms | Allocations: 209)
+
+
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[36m  Disk Storage (0.3ms) [0m[34mGenerated URL for file at key: 8cpjvawjyf9h65tjhvcp4rvd707b (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhPR053YW5aaGQycDVaamxvTmpWMGFtaDJZM0EwY25aa056QTNZZ1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5CbGNtWnBiREV4TG5CdVp5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25jR1Z5Wm1sc01URXVjRzVuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJT2FXMWhaMlV2Y0c1bkJqc0dWRG9SYzJWeWRtbGpaVjl1WVcxbE9ncHNiMk5oYkE9PSIsImV4cCI6IjIwMjItMTAtMDFUMjI6MTc6MzguOTQyWiIsInB1ciI6ImJsb2Jfa2V5In19--edd1c6962c5e430203f19dcae7bb5d02e4940135/perfil11.png)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhPR053YW5aaGQycDVaamxvTmpWMGFtaDJZM0EwY25aa056QTNZZ1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5CbGNtWnBiREV4TG5CdVp5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25jR1Z5Wm1sc01URXVjRzVuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJT2FXMWhaMlV2Y0c1bkJqc0dWRG9SYzJWeWRtbGpaVjl1WVcxbE9ncHNiMk5oYkE9PSIsImV4cCI6IjIwMjItMTAtMDFUMjI6MTc6MzguOTQyWiIsInB1ciI6ImJsb2Jfa2V5In19--edd1c6962c5e430203f19dcae7bb5d02e4940135/perfil11.png
+Completed 302 Found in 14ms (ActiveRecord: 5.3ms | Allocations: 8410)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhPR053YW5aaGQycDVaamxvTmpWMGFtaDJZM0EwY25aa056QTNZZ1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5CbGNtWnBiREV4TG5CdVp5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25jR1Z5Wm1sc01URXVjRzVuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJT2FXMWhaMlV2Y0c1bkJqc0dWRG9SYzJWeWRtbGpaVjl1WVcxbE9ncHNiMk5oYkE9PSIsImV4cCI6IjIwMjItMTAtMDFUMjI6MTc6MzguOTQyWiIsInB1ciI6ImJsb2Jfa2V5In19--edd1c6962c5e430203f19dcae7bb5d02e4940135/perfil11.png" for ::1 at 2022-10-01 19:12:38 -0300
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"perfil11"}
+Completed 200 OK in 0ms (ActiveRecord: 0.0ms | Allocations: 175)
+
+
+Started POST "/likes" for ::1 at 2022-10-01 19:12:40 -0300
+Processing by LikesController#create as */*
+  Parameters: {"like"=>{"post_id"=>"7"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/likes_controller.rb:7:in `create'
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/likes_controller.rb:7:in `create'
+  [1m[36mLike Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "likes" WHERE "likes"."post_id" = $1 AND "likes"."user_id" = $2 LIMIT $3[0m  [["post_id", 7], ["user_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/likes_controller.rb:7:in `create'
+  [1m[36mLike Create (0.8ms)[0m  [1m[32mINSERT INTO "likes" ("post_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["post_id", 7], ["user_id", 1], ["created_at", "2022-10-01 22:12:40.692651"], ["updated_at", "2022-10-01 22:12:40.692651"]]
+  ↳ app/controllers/likes_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (5.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/likes_controller.rb:7:in `create'
+Completed 200 OK in 25ms (Views: 0.3ms | ActiveRecord: 13.5ms | Allocations: 9186)
+
+
+Started DELETE "/likes/1" for ::1 at 2022-10-01 19:12:42 -0300
+Processing by LikesController#destroy as */*
+  Parameters: {"id"=>"1", "like"=>{}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mLike Load (0.4ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1 AND "likes"."id" = $2 LIMIT $3[0m  [["user_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/likes_controller.rb:21:in `set_like'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/likes_controller.rb:15:in `destroy'
+  [1m[36mLike Destroy (0.4ms)[0m  [1m[31mDELETE FROM "likes" WHERE "likes"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/likes_controller.rb:15:in `destroy'
+  [1m[36mTRANSACTION (4.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/likes_controller.rb:15:in `destroy'
+Completed 200 OK in 12ms (Views: 0.4ms | ActiveRecord: 6.3ms | Allocations: 4271)
+
+
+Started POST "/likes" for ::1 at 2022-10-01 19:12:43 -0300
+Processing by LikesController#create as */*
+  Parameters: {"like"=>{"post_id"=>"7"}}
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/likes_controller.rb:7:in `create'
+  [1m[36mPost Load (1.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/likes_controller.rb:7:in `create'
+  [1m[36mLike Exists? (1.3ms)[0m  [1m[34mSELECT 1 AS one FROM "likes" WHERE "likes"."post_id" = $1 AND "likes"."user_id" = $2 LIMIT $3[0m  [["post_id", 7], ["user_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/likes_controller.rb:7:in `create'
+  [1m[36mLike Create (1.1ms)[0m  [1m[32mINSERT INTO "likes" ("post_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["post_id", 7], ["user_id", 1], ["created_at", "2022-10-01 22:12:43.604264"], ["updated_at", "2022-10-01 22:12:43.604264"]]
+  ↳ app/controllers/likes_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (4.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/likes_controller.rb:7:in `create'
+Completed 200 OK in 27ms (Views: 0.2ms | ActiveRecord: 12.6ms | Allocations: 5804)
+
+
+Started DELETE "/likes/2" for ::1 at 2022-10-01 19:12:44 -0300
+Processing by LikesController#destroy as */*
+  Parameters: {"id"=>"2", "like"=>{}}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mLike Load (1.2ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1 AND "likes"."id" = $2 LIMIT $3[0m  [["user_id", 1], ["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/likes_controller.rb:21:in `set_like'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/likes_controller.rb:15:in `destroy'
+  [1m[36mLike Destroy (0.7ms)[0m  [1m[31mDELETE FROM "likes" WHERE "likes"."id" = $1[0m  [["id", 2]]
+  ↳ app/controllers/likes_controller.rb:15:in `destroy'
+  [1m[36mTRANSACTION (4.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/likes_controller.rb:15:in `destroy'
+Completed 200 OK in 23ms (Views: 0.3ms | ActiveRecord: 9.1ms | Allocations: 4224)
+
+
+Started POST "/likes" for ::1 at 2022-10-01 19:12:44 -0300
+Processing by LikesController#create as */*
+  Parameters: {"like"=>{"post_id"=>"7"}}
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/likes_controller.rb:7:in `create'
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/likes_controller.rb:7:in `create'
+  [1m[36mLike Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "likes" WHERE "likes"."post_id" = $1 AND "likes"."user_id" = $2 LIMIT $3[0m  [["post_id", 7], ["user_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/likes_controller.rb:7:in `create'
+  [1m[36mLike Create (0.7ms)[0m  [1m[32mINSERT INTO "likes" ("post_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["post_id", 7], ["user_id", 1], ["created_at", "2022-10-01 22:12:44.596484"], ["updated_at", "2022-10-01 22:12:44.596484"]]
+  ↳ app/controllers/likes_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/likes_controller.rb:7:in `create'
+Completed 200 OK in 14ms (Views: 0.1ms | ActiveRecord: 5.7ms | Allocations: 5807)
+
+
+Started DELETE "/likes/3" for ::1 at 2022-10-01 19:12:45 -0300
+Processing by LikesController#destroy as */*
+  Parameters: {"id"=>"3", "like"=>{}}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mLike Load (1.3ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1 AND "likes"."id" = $2 LIMIT $3[0m  [["user_id", 1], ["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/likes_controller.rb:21:in `set_like'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/likes_controller.rb:15:in `destroy'
+  [1m[36mLike Destroy (1.4ms)[0m  [1m[31mDELETE FROM "likes" WHERE "likes"."id" = $1[0m  [["id", 3]]
+  ↳ app/controllers/likes_controller.rb:15:in `destroy'
+  [1m[36mTRANSACTION (5.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/likes_controller.rb:15:in `destroy'
+Completed 200 OK in 20ms (Views: 0.6ms | ActiveRecord: 10.6ms | Allocations: 4221)
+
+
+Started POST "/likes" for ::1 at 2022-10-01 19:12:49 -0300
+Processing by LikesController#create as */*
+  Parameters: {"like"=>{"post_id"=>"7"}}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/likes_controller.rb:7:in `create'
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/likes_controller.rb:7:in `create'
+  [1m[36mLike Exists? (0.8ms)[0m  [1m[34mSELECT 1 AS one FROM "likes" WHERE "likes"."post_id" = $1 AND "likes"."user_id" = $2 LIMIT $3[0m  [["post_id", 7], ["user_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/likes_controller.rb:7:in `create'
+  [1m[36mLike Create (0.9ms)[0m  [1m[32mINSERT INTO "likes" ("post_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["post_id", 7], ["user_id", 1], ["created_at", "2022-10-01 22:12:49.303893"], ["updated_at", "2022-10-01 22:12:49.303893"]]
+  ↳ app/controllers/likes_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (5.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/likes_controller.rb:7:in `create'
+Completed 200 OK in 19ms (Views: 0.2ms | ActiveRecord: 9.4ms | Allocations: 5806)
+
+
+Started DELETE "/likes/4" for ::1 at 2022-10-01 19:12:49 -0300
+Processing by LikesController#destroy as */*
+  Parameters: {"id"=>"4", "like"=>{}}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mLike Load (1.6ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1 AND "likes"."id" = $2 LIMIT $3[0m  [["user_id", 1], ["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/likes_controller.rb:21:in `set_like'
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/likes_controller.rb:15:in `destroy'
+  [1m[36mLike Destroy (1.2ms)[0m  [1m[31mDELETE FROM "likes" WHERE "likes"."id" = $1[0m  [["id", 4]]
+  ↳ app/controllers/likes_controller.rb:15:in `destroy'
+  [1m[36mTRANSACTION (5.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/likes_controller.rb:15:in `destroy'
+Completed 200 OK in 24ms (Views: 0.6ms | ActiveRecord: 11.8ms | Allocations: 4221)
+
+
+Started POST "/likes" for ::1 at 2022-10-01 19:12:49 -0300
+Processing by LikesController#create as */*
+  Parameters: {"like"=>{"post_id"=>"7"}}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/likes_controller.rb:7:in `create'
+  [1m[36mPost Load (1.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/likes_controller.rb:7:in `create'
+  [1m[36mLike Exists? (1.1ms)[0m  [1m[34mSELECT 1 AS one FROM "likes" WHERE "likes"."post_id" = $1 AND "likes"."user_id" = $2 LIMIT $3[0m  [["post_id", 7], ["user_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/likes_controller.rb:7:in `create'
+  [1m[36mLike Create (1.3ms)[0m  [1m[32mINSERT INTO "likes" ("post_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["post_id", 7], ["user_id", 1], ["created_at", "2022-10-01 22:12:49.985251"], ["updated_at", "2022-10-01 22:12:49.985251"]]
+  ↳ app/controllers/likes_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (5.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/likes_controller.rb:7:in `create'
+Completed 200 OK in 26ms (Views: 0.2ms | ActiveRecord: 12.7ms | Allocations: 5801)
+
+
+Started DELETE "/likes/5" for ::1 at 2022-10-01 19:12:50 -0300
+Processing by LikesController#destroy as */*
+  Parameters: {"id"=>"5", "like"=>{}}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mLike Load (1.7ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1 AND "likes"."id" = $2 LIMIT $3[0m  [["user_id", 1], ["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/likes_controller.rb:21:in `set_like'
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/likes_controller.rb:15:in `destroy'
+  [1m[36mLike Destroy (1.5ms)[0m  [1m[31mDELETE FROM "likes" WHERE "likes"."id" = $1[0m  [["id", 5]]
+  ↳ app/controllers/likes_controller.rb:15:in `destroy'
+  [1m[36mTRANSACTION (2.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/likes_controller.rb:15:in `destroy'
+Completed 200 OK in 20ms (Views: 0.4ms | ActiveRecord: 8.7ms | Allocations: 4221)
+
+
+Started POST "/likes" for ::1 at 2022-10-01 19:12:50 -0300
+Processing by LikesController#create as */*
+  Parameters: {"like"=>{"post_id"=>"7"}}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/likes_controller.rb:7:in `create'
+  [1m[36mPost Load (1.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/likes_controller.rb:7:in `create'
+  [1m[36mLike Exists? (1.3ms)[0m  [1m[34mSELECT 1 AS one FROM "likes" WHERE "likes"."post_id" = $1 AND "likes"."user_id" = $2 LIMIT $3[0m  [["post_id", 7], ["user_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/likes_controller.rb:7:in `create'
+  [1m[36mLike Create (1.3ms)[0m  [1m[32mINSERT INTO "likes" ("post_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["post_id", 7], ["user_id", 1], ["created_at", "2022-10-01 22:12:50.369684"], ["updated_at", "2022-10-01 22:12:50.369684"]]
+  ↳ app/controllers/likes_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (5.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/likes_controller.rb:7:in `create'
+Completed 200 OK in 26ms (Views: 0.2ms | ActiveRecord: 13.2ms | Allocations: 5801)
+
+
+Started DELETE "/likes/6" for ::1 at 2022-10-01 19:12:50 -0300
+Processing by LikesController#destroy as */*
+  Parameters: {"id"=>"6", "like"=>{}}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mLike Load (1.6ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1 AND "likes"."id" = $2 LIMIT $3[0m  [["user_id", 1], ["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/likes_controller.rb:21:in `set_like'
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/likes_controller.rb:15:in `destroy'
+  [1m[36mLike Destroy (1.6ms)[0m  [1m[31mDELETE FROM "likes" WHERE "likes"."id" = $1[0m  [["id", 6]]
+  ↳ app/controllers/likes_controller.rb:15:in `destroy'
+  [1m[36mTRANSACTION (5.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/likes_controller.rb:15:in `destroy'
+Completed 200 OK in 23ms (Views: 0.5ms | ActiveRecord: 11.9ms | Allocations: 4221)
+
+

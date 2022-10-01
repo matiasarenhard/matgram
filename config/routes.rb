@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   devise_for :users, only: %i[sessions registrations passwords]
 
   resources :posts, only: %i[index show new create]
+  resources :likes, only: %i[create destroy]
 
   resources :users, only: %i[show], param: :username
 
